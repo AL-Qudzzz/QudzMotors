@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QUDZ Motors</title>
+    <title>First Motors</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="logo">QUDZ Motors</div>
+      <div class="logo">FIRST MOTORS</div>
       <nav>
         <ul>
+          <li><a href="#">CARS</a></li>
           <li><a href="#">MEDIA</a></li>
           <li><a href="#">NEWS</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -30,6 +31,12 @@
           <div
             class="slide active"
             style="
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707598755-blob&w=3840&q=100');
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
               background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707644325-blob&w=3840&q=100');
             "
           ></div>
@@ -39,15 +46,9 @@
               background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707662964-blob&w=3840&q=100');
             "
           ></div>
-          <div
-            class="slide"
-            style="
-              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707598755-blob&w=3840&q=100');
-            "
-          ></div>
         </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
         <div class="dots">
           <span class="dot active" onclick="currentSlide(0)"></span>
           <span class="dot" onclick="currentSlide(1)"></span>
@@ -114,14 +115,15 @@
         <button class="active" onclick="showAvailable()">Available</button>
         <button onclick="showSold()">Sold</button>
       </div>
+      <div class="comparison">
+        <button onclick="toggleComparison()">VS</button>
+      </div>
       <div class="recommendations">
         <select id="recommendations">
           <option value="all">Recommended</option>
           <option value="top">Top Picks</option>
         </select>
       </div>
-
-      <!----------------------------------Daftar Mobil------------------------------------------------>
       <div class="cars" id="carGrid">
         <div
           class="car-card"
@@ -129,9 +131,11 @@
           data-year="2022"
           data-price="1399950"
           data-body="coupe"
+          data-tooltip="Luxury Italian Engineering"
+          data-specs='{"engine": "3.0L V6", "horsepower": "621 HP", "topSpeed": "325 km/h", "acceleration": "0-100 km/h in 2.9s"}'
         >
           <img
-            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
+            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1726760560714-blob&w=640&q=75"
             alt="Maserati MC20 Venuum Cerberus"
           />
           <h3>Maserati MC20 Venuum Cerberus</h3>
@@ -144,6 +148,8 @@
           data-year="2024"
           data-price="1499950"
           data-body="coupe"
+          data-tooltip="Precision German Performance"
+          data-specs='{"engine": "4.0L Flat-6", "horsepower": "518 HP", "topSpeed": "315 km/h", "acceleration": "0-100 km/h in 3.2s"}'
         >
           <img
             src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
@@ -159,9 +165,11 @@
           data-year="2016"
           data-price="25799950"
           data-body="convertible"
+          data-tooltip="Iconic Ferrari Hybrid Power"
+          data-specs='{"engine": "6.3L V12 + Electric", "horsepower": "950 HP", "topSpeed": "350 km/h", "acceleration": "0-100 km/h in 2.5s"}'
         >
           <img
-            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
+            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1735398350789-blob&w=640&q=75"
             alt="Ferrari LaFerrari Aperta"
           />
           <h3>Ferrari LaFerrari Aperta</h3>
@@ -170,21 +178,40 @@
         </div>
         <div
           class="car-card"
-          data-brand="porsche"
-          data-year="2025"
-          data-price="1519995"
+          data-brand="pagani"
+          data-year="2014"
+          data-price="12499000"
           data-body="coupe"
+          data-tooltip="The First Pagani Huayra Coupe Produced"
+          data-specs='{"engine": "6.0L V-12 Twin-Turbocharged Engine", "horsepower": "730 HP", "topSpeed": "360 km/h", "acceleration": "0-100 km/h in 3.2s"}'
         >
           <img
-            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
-            alt="Porsche 911 GT3 RS Weissach"
+            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1714474156718-blob&w=640&q=75"
+            alt="Pagani Huayra Carbon Edition 2014"
           />
-          <h3>Porsche 911 GT3 RS Weissach</h3>
-          <p>Price: AED 1,519,995</p>
-          <p>Year: 2025 | 0 km</p>
+          <h3>Pagani Huayra Carbon Edition 2014</h3>
+          <p>Price: AED 12,499,000</p>
+          <p>Year: 2014 | 0 km</p>
         </div>
       </div>
     </section>
+
+    <!-- Pop-up untuk spesifikasi mobil -->
+    <div class="popup" id="carPopup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 id="popupTitle"></h2>
+        <img id="popupImage" src="" alt="Car Image" />
+        <div class="specs">
+          <p><strong>Engine:</strong> <span id="popupEngine"></span></p>
+          <p><strong>Horsepower:</strong> <span id="popupHorsepower"></span></p>
+          <p><strong>Top Speed:</strong> <span id="popupTopSpeed"></span></p>
+          <p>
+            <strong>Acceleration:</strong> <span id="popupAcceleration"></span>
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

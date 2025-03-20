@@ -37,7 +37,65 @@ function currentSlide(n) {
 // Inisialisasi slideshow
 showSlides(slideIndex);
 
-// Fungsi filter dan interaktivitas lainnya tetap sama
+// Fungsi untuk menampilkan pop-up
+function showPopup(car) {
+  const popup = document.getElementById("carPopup");
+  const title = document.getElementById("popupTitle");
+  const image = document.getElementById("popupImage");
+  const engine = document.getElementById("popupEngine");
+  const horsepower = document.getElementById("popupHorsepower");
+  const topSpeed = document.getElementById("popupTopSpeed");
+  const acceleration = document.getElementById("popupAcceleration");
+
+  // Ambil data dari car-card
+  const specs = JSON.parse(car.getAttribute("data-specs"));
+  title.textContent = car.querySelector("h3").textContent;
+  image.src = car.querySelector("img").src;
+  engine.textContent = specs.engine;
+  horsepower.textContent = specs.horsepower;
+  topSpeed.textContent = specs.topSpeed;
+  acceleration.textContent = specs.acceleration;
+
+  popup.style.display = "flex";
+}
+
+// Fungsi untuk menutup pop-up
+function closePopup() {
+  const popup = document.getElementById("carPopup");
+  popup.style.display = "none";
+}
+
+// Tambahkan event listener untuk setiap car-card
+document.querySelectorAll(".car-card").forEach((card) => {
+  card.addEventListener("click", function () {
+    // Hanya buka pop-up jika card tidak dalam mode enlarged
+    if (!this.classList.contains("enlarged")) {
+      showPopup(this);
+    } else {
+      this.classList.remove("enlarged");
+      this.style.transform = "translateY(-5px)";
+      this.style.zIndex = "auto";
+      this.style.position = "relative";
+      this.style.left = "auto";
+      this.style.top = "auto";
+      this.style.transformOrigin = "center";
+    }
+  });
+
+  card.addEventListener("mouseleave", function () {
+    if (this.classList.contains("enlarged")) {
+      this.classList.remove("enlarged");
+      this.style.transform = "translateY(-5px)";
+      this.style.zIndex = "auto";
+      this.style.position = "relative";
+      this.style.left = "auto";
+      this.style.top = "auto";
+      this.style.transformOrigin = "center";
+    }
+  });
+});
+
+// Fungsi filter dan interaktivitas lainnya
 function filterCars() {
   const brand = document.getElementById("brands").value;
   const year = document.getElementById("years").value;
@@ -82,33 +140,3 @@ function showSold() {
 function toggleComparison() {
   alert("Comparison view toggled!");
 }
-
-document.querySelectorAll(".car-card").forEach((card) => {
-  card.addEventListener("click", function () {
-    if (this.classList.contains("enlarged")) {
-      this.classList.remove("enlarged");
-      this.style.transform = "translateY(-5px)";
-    } else {
-      this.classList.add("enlarged");
-      this.style.transform = "scale(1.5)";
-      this.style.zIndex = "1000";
-      this.style.position = "absolute";
-      this.style.left = "50%";
-      this.style.top = "50%";
-      this.style.transformOrigin = "center";
-      this.style.transform += "translate(-50%, -50%)";
-    }
-  });
-
-  card.addEventListener("mouseleave", function () {
-    if (this.classList.contains("enlarged")) {
-      this.classList.remove("enlarged");
-      this.style.transform = "translateY(-5px)";
-      this.style.zIndex = "auto";
-      this.style.position = "relative";
-      this.style.left = "auto";
-      this.style.top = "auto";
-      this.style.transformOrigin = "center";
-    }
-  });
-});

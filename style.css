@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #000; /* Latar belakang hitam untuk seluruh halaman */
-  color: #fff; /* Warna teks default putih agar kontras dengan latar belakang hitam */
+  background-color: #000;
+  color: #fff;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #1a1a1a; /* Latar belakang header sedikit lebih terang dari hitam */
+  background-color: #1a1a1a;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
@@ -25,7 +25,7 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #fff; /* Warna logo putih */
+  color: #fff;
 }
 
 nav ul {
@@ -39,12 +39,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff; /* Warna link putih */
+  color: #fff;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ff0000; /* Warna hover link merah */
+  color: #ff0000;
 }
 
 .user-icons span {
@@ -61,19 +61,19 @@ nav ul li a:hover {
 .hero {
   text-align: center;
   padding: 20px;
-  background-color: #000; /* Latar belakang hero hitam */
+  background-color: #000;
   transition: background-color 0.3s;
   position: relative;
 }
 
 .hero:hover {
-  background-color: #1a1a1a; /* Sedikit lebih terang saat hover */
+  background-color: #1a1a1a;
 }
 
 .hero h1 {
   font-size: 32px;
   margin-bottom: 10px;
-  color: #fff; /* Warna teks putih */
+  color: #fff;
 }
 
 .hero-image {
@@ -109,12 +109,7 @@ nav ul li a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Tombol lebih terang agar kontras */
+  background-color: rgba(255, 255, 255, 0.5);
   color: #000;
   border: none;
   padding: 10px;
@@ -155,14 +150,14 @@ nav ul li a:hover {
 }
 
 .dot.active {
-  background-color: #ff0000; /* Dot aktif merah */
+  background-color: #ff0000;
 }
 
 .filters {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: #1a1a1a; /* Latar belakang filter sedikit lebih terang */
+  background-color: #1a1a1a;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
@@ -173,13 +168,13 @@ nav ul li a:hover {
 
 .filter-group label {
   margin-bottom: 5px;
-  color: #fff; /* Warna label putih */
+  color: #fff;
 }
 
 .filter-group select {
   padding: 5px;
   width: 150px;
-  background-color: #333; /* Latar belakang select lebih terang */
+  background-color: #333;
   color: #fff;
   border: 1px solid #555;
   transition: border-color 0.3s;
@@ -205,7 +200,7 @@ nav ul li a:hover {
 
 .car-list {
   padding: 20px;
-  background-color: #000; /* Latar belakang car-list hitam */
+  background-color: #000;
 }
 
 .status-tabs {
@@ -265,14 +260,15 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 350px;
-  background-color: #fff; /* Latar belakang grid box putih */
-  color: #000; /* Warna teks hitam agar kontras dengan latar belakang putih */
+  background-color: #fff;
+  color: #000;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   position: relative;
+  cursor: pointer; /* Menunjukkan bahwa card bisa diklik */
 }
 
 .car-card:hover {
-  background-color: #ff0000; /* Efek hover merah */
+  background-color: #ff0000;
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
 }
@@ -298,7 +294,7 @@ nav ul li a:hover {
 }
 
 .car-card:hover h3 {
-  color: #fff; /* Warna teks putih saat hover agar kontras dengan latar belakang merah */
+  color: #fff;
 }
 
 .car-card p {
@@ -310,7 +306,7 @@ nav ul li a:hover {
 }
 
 .car-card:hover p {
-  color: #fff; /* Warna teks putih saat hover */
+  color: #fff;
 }
 
 .car-card[data-tooltip]:hover:after {
@@ -326,6 +322,60 @@ nav ul li a:hover {
   white-space: nowrap;
   z-index: 1;
   font-size: 12px;
+}
+
+/* Gaya untuk Pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+}
+
+.popup-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.popup-content .specs p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.popup-content .close:hover {
+  color: #cc0000;
 }
 
 @media (max-width: 768px) {
