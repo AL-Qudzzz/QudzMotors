@@ -9,7 +9,12 @@
   <body>
     <header>
       <div class="logo">FIRST MOTORS</div>
-      <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="navMenu">
         <ul>
           <li><a href="#">CARS</a></li>
           <li><a href="#">MEDIA</a></li>
@@ -18,11 +23,6 @@
           <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="user-icons">
-        <span>🔍</span>
-        <span>❤️</span>
-        <span>🛒</span>
-      </div>
     </header>
 
     <section class="hero">
@@ -31,7 +31,7 @@
           <div
             class="slide active"
             style="
-              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707598755-blob&w=3840&q=100');
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707662964-blob&w=3840&q=100');
             "
           ></div>
           <div
@@ -115,9 +115,6 @@
         <button class="active" onclick="showAvailable()">Available</button>
         <button onclick="showSold()">Sold</button>
       </div>
-      <div class="comparison">
-        <button onclick="toggleComparison()">VS</button>
-      </div>
       <div class="recommendations">
         <select id="recommendations">
           <option value="all">Recommended</option>
@@ -196,10 +193,9 @@
       </div>
     </section>
 
-    <!-- Pop-up untuk spesifikasi mobil -->
     <div class="popup" id="carPopup">
       <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
+        <span class="close" onclick="closePopup()">×</span>
         <h2 id="popupTitle"></h2>
         <img id="popupImage" src="" alt="Car Image" />
         <div class="specs">

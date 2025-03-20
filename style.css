@@ -28,6 +28,24 @@ header {
   color: #fff;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+nav {
+  display: flex;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -228,22 +246,16 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.comparison,
 .recommendations {
   margin-bottom: 20px;
 }
 
-.comparison button,
 .recommendations select {
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
   border: 1px solid #555;
   transition: background-color 0.3s;
-}
-
-.comparison button:hover {
-  background-color: #555;
 }
 
 .cars {
@@ -264,7 +276,7 @@ nav ul li a:hover {
   color: #000;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   position: relative;
-  cursor: pointer; /* Menunjukkan bahwa card bisa diklik */
+  cursor: pointer;
 }
 
 .car-card:hover {
@@ -324,7 +336,6 @@ nav ul li a:hover {
   font-size: 12px;
 }
 
-/* Gaya untuk Pop-up */
 .popup {
   display: none;
   position: fixed;
@@ -336,6 +347,7 @@ nav ul li a:hover {
   z-index: 2000;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 .popup-content {
@@ -351,6 +363,7 @@ nav ul li a:hover {
 
 .popup-content h2 {
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .popup-content img {
@@ -378,23 +391,364 @@ nav ul li a:hover {
   color: #cc0000;
 }
 
-@media (max-width: 768px) {
+/* Media Queries untuk Responsivitas */
+
+/* Layar kecil (ponsel, <= 576px) */
+@media (max-width: 576px) {
   header {
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+  }
+
+  .logo {
+    font-size: 20px;
+    flex: 1;
     text-align: center;
   }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1a1a1a;
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: block;
+  }
+
   nav ul {
     flex-direction: column;
-    margin-top: 10px;
+    padding: 10px 0;
   }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .user-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .user-icons span {
+    margin: 0;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero-image {
+    height: 150px;
+  }
+
+  .prev,
+  .next {
+    padding: 5px;
+    font-size: 14px;
+  }
+
   .filters {
     flex-direction: column;
     gap: 10px;
+    padding: 10px;
   }
+
+  .filter-group select {
+    width: 100%;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+
+  .status-tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .status-tabs button {
+    width: 100%;
+  }
+
+  .recommendations select {
+    width: 100%;
+  }
+
   .cars {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
+
   .car-card {
+    height: 300px;
+  }
+
+  .car-card img {
+    height: 150px;
+  }
+
+  .car-card h3 {
+    font-size: 14px;
+  }
+
+  .car-card p {
+    font-size: 12px;
+  }
+
+  .popup-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .popup-content h2 {
+    font-size: 18px;
+  }
+
+  .popup-content img {
+    height: 150px;
+  }
+
+  .popup-content .specs p {
+    font-size: 14px;
+  }
+}
+
+/* Layar sedang (tablet, 577px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    display: none;
     width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1a1a1a;
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .user-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .user-icons span {
+    margin: 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero-image {
+    height: 180px;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .filter-group select {
+    width: 100%;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+
+  .status-tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .status-tabs button {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .recommendations select {
+    width: 100%;
+  }
+
+  .cars {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .car-card {
+    height: 320px;
+  }
+
+  .car-card img {
+    height: 170px;
+  }
+
+  .car-card h3 {
+    font-size: 15px;
+  }
+
+  .car-card p {
+    font-size: 13px;
+  }
+
+  .popup-content {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .popup-content h2 {
+    font-size: 20px;
+  }
+
+  .popup-content img {
+    height: 180px;
+  }
+
+  .popup-content .specs p {
+    font-size: 15px;
+  }
+}
+
+/* Layar besar (desktop, 769px - 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 12px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .filter-group {
+    flex: 1 1 30%;
+  }
+
+  .filter-group select {
+    width: 100%;
+  }
+
+  .filters button {
+    flex: 1 1 100%;
+  }
+
+  .cars {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .car-card {
+    height: 340px;
+  }
+
+  .car-card img {
+    height: 190px;
+  }
+}
+
+/* Layar sangat besar (> 1200px) */
+@media (min-width: 1201px) {
+  header {
+    padding: 15px 40px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-image {
+    height: 220px;
+  }
+
+  .filters {
+    padding: 20px 40px;
+  }
+
+  .filter-group select {
+    width: 150px;
+  }
+
+  .cars {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
   }
 }

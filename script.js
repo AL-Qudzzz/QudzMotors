@@ -2,6 +2,12 @@ let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
 const dots = document.getElementsByClassName("dot");
 
+// Fungsi untuk hamburger menu
+function toggleMenu() {
+  const nav = document.getElementById("navMenu");
+  nav.classList.toggle("active");
+}
+
 // Fungsi untuk menampilkan slide
 function showSlides(n) {
   if (n >= slides.length) slideIndex = 0;
@@ -47,7 +53,6 @@ function showPopup(car) {
   const topSpeed = document.getElementById("popupTopSpeed");
   const acceleration = document.getElementById("popupAcceleration");
 
-  // Ambil data dari car-card
   const specs = JSON.parse(car.getAttribute("data-specs"));
   title.textContent = car.querySelector("h3").textContent;
   image.src = car.querySelector("img").src;
@@ -68,7 +73,6 @@ function closePopup() {
 // Tambahkan event listener untuk setiap car-card
 document.querySelectorAll(".car-card").forEach((card) => {
   card.addEventListener("click", function () {
-    // Hanya buka pop-up jika card tidak dalam mode enlarged
     if (!this.classList.contains("enlarged")) {
       showPopup(this);
     } else {
@@ -119,7 +123,7 @@ function filterCars() {
     if (bodyType !== "all" && card.getAttribute("data-body") !== bodyType)
       show = false;
 
-    card.style.display = show ? "inline-block" : "none";
+    card.style.display = show ? "block" : "none";
   }
 }
 
@@ -135,8 +139,4 @@ function showSold() {
     .querySelectorAll(".status-tabs button")
     .forEach((btn) => btn.classList.remove("active"));
   event.target.classList.add("active");
-}
-
-function toggleComparison() {
-  alert("Comparison view toggled!");
 }
