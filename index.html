@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUDZ Motors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">QUDZ Motors</div>
+      <nav>
+        <ul>
+          <li><a href="#">MEDIA</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="user-icons">
+        <span>🔍</span>
+        <span>❤️</span>
+        <span>🛒</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-image">
+        <div class="slideshow">
+          <div
+            class="slide active"
+            style="
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707644325-blob&w=3840&q=100');
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707662964-blob&w=3840&q=100');
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707598755-blob&w=3840&q=100');
+            "
+          ></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="filter-group">
+        <label for="brands">Brands</label>
+        <select id="brands">
+          <option value="all">All</option>
+          <option value="maserati">Maserati</option>
+          <option value="porsche">Porsche</option>
+          <option value="ferrari">Ferrari</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="years">Years</label>
+        <select id="years">
+          <option value="all">1947 - 2025</option>
+          <option value="2022">2022</option>
+          <option value="2024">2024</option>
+          <option value="2016">2016</option>
+          <option value="2025">2025</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="price">Price</label>
+        <select id="price">
+          <option value="all">All price options</option>
+          <option value="0-2000000">0 - 2,000,000 AED</option>
+          <option value="2000000-15000000">2,000,000 - 15,000,000 AED</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="bodyType">Body Type</label>
+        <select id="bodyType">
+          <option value="all">All body types</option>
+          <option value="coupe">Coupe</option>
+          <option value="convertible">Convertible</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="driveType">Drive Type</label>
+        <select id="driveType">
+          <option value="all">All drive types</option>
+          <option value="awd">AWD</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="specs">Specifications</label>
+        <select id="specs">
+          <option value="all">All specifications</option>
+          <option value="high-performance">High Performance</option>
+        </select>
+      </div>
+      <button onclick="filterCars()">Search</button>
+    </section>
+
+    <section class="car-list">
+      <div class="status-tabs">
+        <button class="active" onclick="showAvailable()">Available</button>
+        <button onclick="showSold()">Sold</button>
+      </div>
+      <div class="recommendations">
+        <select id="recommendations">
+          <option value="all">Recommended</option>
+          <option value="top">Top Picks</option>
+        </select>
+      </div>
+
+      <!----------------------------------Daftar Mobil------------------------------------------------>
+      <div class="cars" id="carGrid">
+        <div
+          class="car-card"
+          data-brand="maserati"
+          data-year="2022"
+          data-price="1399950"
+          data-body="coupe"
+        >
+          <img
+            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
+            alt="Maserati MC20 Venuum Cerberus"
+          />
+          <h3>Maserati MC20 Venuum Cerberus</h3>
+          <p>Price: AED 1,399,950</p>
+          <p>Year: 2022 | 0 km</p>
+        </div>
+        <div
+          class="car-card"
+          data-brand="porsche"
+          data-year="2024"
+          data-price="1499950"
+          data-body="coupe"
+        >
+          <img
+            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
+            alt="Porsche 911 GT3 RS Weissach"
+          />
+          <h3>Porsche 911 GT3 RS Weissach</h3>
+          <p>Price: AED 1,499,950</p>
+          <p>Year: 2024 | 0 km</p>
+        </div>
+        <div
+          class="car-card"
+          data-brand="ferrari"
+          data-year="2016"
+          data-price="25799950"
+          data-body="convertible"
+        >
+          <img
+            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
+            alt="Ferrari LaFerrari Aperta"
+          />
+          <h3>Ferrari LaFerrari Aperta</h3>
+          <p>Price: AED 25,799,950</p>
+          <p>Year: 2016 | 0 km</p>
+        </div>
+        <div
+          class="car-card"
+          data-brand="porsche"
+          data-year="2025"
+          data-price="1519995"
+          data-body="coupe"
+        >
+          <img
+            src="https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fcars%2F1736781251962-blob&w=640&q=75"
+            alt="Porsche 911 GT3 RS Weissach"
+          />
+          <h3>Porsche 911 GT3 RS Weissach</h3>
+          <p>Price: AED 1,519,995</p>
+          <p>Year: 2025 | 0 km</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

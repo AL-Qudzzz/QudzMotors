@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000; /* Latar belakang hitam untuk seluruh halaman */
+  color: #fff; /* Warna teks default putih agar kontras dengan latar belakang hitam */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1a1a1a; /* Latar belakang header sedikit lebih terang dari hitam */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Warna logo putih */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Warna link putih */
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0000; /* Warna hover link merah */
+}
+
+.user-icons span {
+  margin-left: 15px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.user-icons span:hover {
+  transform: scale(1.2);
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #000; /* Latar belakang hero hitam */
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.hero:hover {
+  background-color: #1a1a1a; /* Sedikit lebih terang saat hover */
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #fff; /* Warna teks putih */
+}
+
+.hero-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Tombol lebih terang agar kontras */
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #ff0000; /* Dot aktif merah */
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #1a1a1a; /* Latar belakang filter sedikit lebih terang */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  color: #fff; /* Warna label putih */
+}
+
+.filter-group select {
+  padding: 5px;
+  width: 150px;
+  background-color: #333; /* Latar belakang select lebih terang */
+  color: #fff;
+  border: 1px solid #555;
+  transition: border-color 0.3s;
+}
+
+.filter-group select:focus {
+  border-color: #ff0000;
+  outline: none;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover {
+  background-color: #cc0000;
+}
+
+.car-list {
+  padding: 20px;
+  background-color: #000; /* Latar belakang car-list hitam */
+}
+
+.status-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.status-tabs button {
+  padding: 10px 20px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.status-tabs button:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.status-tabs button.active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.comparison,
+.recommendations {
+  margin-bottom: 20px;
+}
+
+.comparison button,
+.recommendations select {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  transition: background-color 0.3s;
+}
+
+.comparison button:hover {
+  background-color: #555;
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.car-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  background-color: #fff; /* Latar belakang grid box putih */
+  color: #000; /* Warna teks hitam agar kontras dengan latar belakang putih */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.car-card:hover {
+  background-color: #ff0000; /* Efek hover merah */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.car-card:hover img {
+  opacity: 0.9;
+}
+
+.car-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.3s;
+}
+
+.car-card:hover h3 {
+  color: #fff; /* Warna teks putih saat hover agar kontras dengan latar belakang merah */
+}
+
+.car-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.car-card:hover p {
+  color: #fff; /* Warna teks putih saat hover */
+}
+
+.car-card[data-tooltip]:hover:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cars {
+    grid-template-columns: 1fr;
+  }
+  .car-card {
+    width: 100%;
+  }
+}
