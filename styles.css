@@ -65,17 +65,6 @@ nav ul li a:hover {
   color: #ff0000;
 }
 
-.user-icons span {
-  margin-left: 15px;
-  cursor: pointer;
-  color: #fff;
-  transition: transform 0.3s;
-}
-
-.user-icons span:hover {
-  transform: scale(1.2);
-}
-
 .hero {
   text-align: center;
   padding: 20px;
@@ -171,6 +160,28 @@ nav ul li a:hover {
   background-color: #ff0000;
 }
 
+.search-bar {
+  padding: 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar input:focus {
+  border-color: #ff0000;
+  outline: none;
+}
+
 .filters {
   display: flex;
   justify-content: space-around;
@@ -221,31 +232,6 @@ nav ul li a:hover {
   background-color: #000;
 }
 
-.status-tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.status-tabs button {
-  padding: 10px 20px;
-  border: 1px solid #555;
-  background-color: #333;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.status-tabs button:hover {
-  background-color: #28a745;
-  color: #fff;
-}
-
-.status-tabs button.active {
-  background-color: #28a745;
-  color: #fff;
-}
-
 .recommendations {
   margin-bottom: 20px;
 }
@@ -289,6 +275,7 @@ nav ul li a:hover {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  aspect-ratio: 3 / 2;
   transition: opacity 0.3s;
 }
 
@@ -370,6 +357,7 @@ nav ul li a:hover {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  aspect-ratio: 3 / 2;
   margin-bottom: 15px;
 }
 
@@ -391,9 +379,77 @@ nav ul li a:hover {
   color: #cc0000;
 }
 
-/* Media Queries untuk Responsivitas */
+/* Gaya untuk halaman About dan Contact */
+.page-content {
+  padding: 40px 20px;
+  background-color: #000;
+  text-align: center;
+}
 
-/* Layar kecil (ponsel, <= 576px) */
+.page-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.page-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #ccc;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff0000;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #cc0000;
+}
+
+/* Media Queries untuk Responsivitas */
 @media (max-width: 576px) {
   header {
     flex-wrap: wrap;
@@ -435,15 +491,6 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  .user-icons {
-    display: flex;
-    gap: 10px;
-  }
-
-  .user-icons span {
-    margin: 0;
-  }
-
   .hero h1 {
     font-size: 24px;
   }
@@ -458,6 +505,14 @@ nav ul li a:hover {
     font-size: 14px;
   }
 
+  .search-bar {
+    padding: 10px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
   .filters {
     flex-direction: column;
     gap: 10px;
@@ -469,15 +524,6 @@ nav ul li a:hover {
   }
 
   .filters button {
-    width: 100%;
-  }
-
-  .status-tabs {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .status-tabs button {
     width: 100%;
   }
 
@@ -496,6 +542,7 @@ nav ul li a:hover {
 
   .car-card img {
     height: 150px;
+    aspect-ratio: 3 / 2;
   }
 
   .car-card h3 {
@@ -517,14 +564,22 @@ nav ul li a:hover {
 
   .popup-content img {
     height: 150px;
+    aspect-ratio: 3 / 2;
   }
 
   .popup-content .specs p {
     font-size: 14px;
   }
+
+  .page-content h1 {
+    font-size: 24px;
+  }
+
+  .page-content p {
+    font-size: 14px;
+  }
 }
 
-/* Layar sedang (tablet, 577px - 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
   header {
     padding: 15px;
@@ -562,21 +617,16 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  .user-icons {
-    display: flex;
-    gap: 10px;
-  }
-
-  .user-icons span {
-    margin: 0;
-  }
-
   .hero h1 {
     font-size: 28px;
   }
 
   .hero-image {
     height: 180px;
+  }
+
+  .search-bar {
+    padding: 15px;
   }
 
   .filters {
@@ -591,17 +641,6 @@ nav ul li a:hover {
 
   .filters button {
     width: 100%;
-  }
-
-  .status-tabs {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .status-tabs button {
-    flex: 1;
-    min-width: 120px;
   }
 
   .recommendations select {
@@ -619,6 +658,7 @@ nav ul li a:hover {
 
   .car-card img {
     height: 170px;
+    aspect-ratio: 3 / 2;
   }
 
   .car-card h3 {
@@ -640,14 +680,18 @@ nav ul li a:hover {
 
   .popup-content img {
     height: 180px;
+    aspect-ratio: 3 / 2;
   }
 
   .popup-content .specs p {
     font-size: 15px;
   }
+
+  .page-content h1 {
+    font-size: 28px;
+  }
 }
 
-/* Layar besar (desktop, 769px - 1200px) */
 @media (min-width: 769px) and (max-width: 1200px) {
   header {
     padding: 15px 30px;
@@ -706,10 +750,10 @@ nav ul li a:hover {
 
   .car-card img {
     height: 190px;
+    aspect-ratio: 3 / 2;
   }
 }
 
-/* Layar sangat besar (> 1200px) */
 @media (min-width: 1201px) {
   header {
     padding: 15px 40px;

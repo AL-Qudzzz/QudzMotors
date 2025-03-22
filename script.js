@@ -1,6 +1,7 @@
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
 const dots = document.getElementsByClassName("dot");
+let carsData = []; // Untuk menyimpan data mobil dari JSON
 
 // Fungsi untuk hamburger menu
 function toggleMenu() {
@@ -43,6 +44,78 @@ function currentSlide(n) {
 // Inisialisasi slideshow
 showSlides(slideIndex);
 
+// Fungsi untuk memuat data mobil dari JSON dan menampilkannya
+async function loadCars() {
+  try {
+    const response = await fetch("cars.json");
+    carsData = await response.json();
+    displayCars(carsData);
+  } catch (error) {
+    console.error("Error loading cars:", error);
+  }
+}
+
+// Fungsi untuk menampilkan mobil ke dalam HTML
+function displayCars(cars) {
+  const carGrid = document.getElementById("carGrid");
+  carGrid.innerHTML = ""; // Kosongkan grid sebelum menambahkan elemen baru
+
+  cars.forEach((car) => {
+    const carCard = document.createElement("div");
+    carCard.classList.add("car-card");
+    carCard.setAttribute("data-brand", car.brand);
+    carCard.setAttribute("data-year", car.year);
+    carCard.setAttribute("data-price", car.price);
+    carCard.setAttribute("data-body", car.body);
+    carCard.setAttribute("data-tooltip", car.tooltip);
+    carCard.setAttribute("data-specs", JSON.stringify(car.specs));
+    carCard.setAttribute("data-name", car.name.toLowerCase()); // Untuk pencarian
+
+    carCard.innerHTML = `
+            <img src="${car.image}" alt="${car.name}">
+            <h3>${car.name}</h3>
+            <p>Price: AED ${car.price.toLocaleString()}</p>
+            <p>Year: ${car.year} | 0 km</p>
+        `;
+
+    carGrid.appendChild(carCard);
+  });
+
+  // Tambahkan event listener untuk setiap car-card setelah dimuat
+  addCarCardListeners();
+}
+
+// Fungsi untuk menambahkan event listener ke car-card
+function addCarCardListeners() {
+  document.querySelectorAll(".car-card").forEach((card) => {
+    card.addEventListener("click", function (event) {
+      if (!this.classList.contains("enlarged")) {
+        showPopup(this);
+      } else {
+        this.classList.remove("enlarged");
+        this.style.transform = "translateY(-5px)";
+        this.style.zIndex = "auto";
+        this.style.position = "relative";
+        this.style.left = "auto";
+        this.style.top = "auto";
+        this.style.transformOrigin = "center";
+      }
+    });
+
+    card.addEventListener("mouseleave", function () {
+      if (this.classList.contains("enlarged")) {
+        this.classList.remove("enlarged");
+        this.style.transform = "translateY(-5px)";
+        this.style.zIndex = "auto";
+        this.style.position = "relative";
+        this.style.left = "auto";
+        this.style.top = "auto";
+        this.style.transformOrigin = "center";
+      }
+    });
+  });
+}
+
 // Fungsi untuk menampilkan pop-up
 function showPopup(car) {
   const popup = document.getElementById("carPopup");
@@ -70,36 +143,16 @@ function closePopup() {
   popup.style.display = "none";
 }
 
-// Tambahkan event listener untuk setiap car-card
-document.querySelectorAll(".car-card").forEach((card) => {
-  card.addEventListener("click", function () {
-    if (!this.classList.contains("enlarged")) {
-      showPopup(this);
-    } else {
-      this.classList.remove("enlarged");
-      this.style.transform = "translateY(-5px)";
-      this.style.zIndex = "auto";
-      this.style.position = "relative";
-      this.style.left = "auto";
-      this.style.top = "auto";
-      this.style.transformOrigin = "center";
-    }
-  });
+// Fungsi untuk fitur pencarian
+function searchCars() {
+  const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+  const filteredCars = carsData.filter((car) =>
+    car.name.toLowerCase().includes(searchTerm)
+  );
+  displayCars(filteredCars);
+}
 
-  card.addEventListener("mouseleave", function () {
-    if (this.classList.contains("enlarged")) {
-      this.classList.remove("enlarged");
-      this.style.transform = "translateY(-5px)";
-      this.style.zIndex = "auto";
-      this.style.position = "relative";
-      this.style.left = "auto";
-      this.style.top = "auto";
-      this.style.transformOrigin = "center";
-    }
-  });
-});
-
-// Fungsi filter dan interaktivitas lainnya
+// Fungsi untuk filter
 function filterCars() {
   const brand = document.getElementById("brands").value;
   const year = document.getElementById("years").value;
@@ -108,35 +161,30 @@ function filterCars() {
   const driveType = document.getElementById("driveType").value;
   const specs = document.getElementById("specs").value;
 
-  const cards = document.getElementsByClassName("car-card");
-  for (let card of cards) {
+  let filteredCars = carsData.filter((car) => {
     let show = true;
-    if (brand !== "all" && card.getAttribute("data-brand") !== brand)
-      show = false;
-    if (year !== "all" && card.getAttribute("data-year") !== year) show = false;
+    if (brand !== "all" && car.brand !== brand) show = false;
+    if (year !== "all" && car.year !== parseInt(year)) show = false;
     if (price !== "all") {
-      const cardPrice = parseInt(card.getAttribute("data-price"));
+      const carPrice = car.price;
       const [min, max] = price.split("-").map(Number);
-      if (max ? cardPrice < min || cardPrice > max : cardPrice > min)
-        show = false;
+      if (max ? carPrice < min || carPrice > max : carPrice > min) show = false;
     }
-    if (bodyType !== "all" && card.getAttribute("data-body") !== bodyType)
-      show = false;
+    if (bodyType !== "all" && car.body !== bodyType) show = false;
+    // Tambahkan logika filter untuk driveType dan specs jika diperlukan
+    return show;
+  });
 
-    card.style.display = show ? "block" : "none";
+  // Terapkan pencarian juga setelah filter
+  const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+  if (searchTerm) {
+    filteredCars = filteredCars.filter((car) =>
+      car.name.toLowerCase().includes(searchTerm)
+    );
   }
+
+  displayCars(filteredCars);
 }
 
-function showAvailable() {
-  document
-    .querySelectorAll(".status-tabs button")
-    .forEach((btn) => btn.classList.remove("active"));
-  event.target.classList.add("active");
-}
-
-function showSold() {
-  document
-    .querySelectorAll(".status-tabs button")
-    .forEach((btn) => btn.classList.remove("active"));
-  event.target.classList.add("active");
-}
+// Muat data mobil saat halaman dimuat
+document.addEventListener("DOMContentLoaded", loadCars);

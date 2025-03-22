@@ -1,0 +1,527 @@
+[
+  {
+    "brand": "maserati",
+    "name": "Maserati MC20 Venuum Cerberus",
+    "year": 2022,
+    "price": 1399950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Maserati+MC20",
+    "tooltip": "Luxury Italian Engineering",
+    "specs": {
+      "engine": "3.0L V6",
+      "horsepower": "621 HP",
+      "topSpeed": "325 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche 911 GT3 RS Weissach",
+    "year": 2024,
+    "price": 1499950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Porsche+911",
+    "tooltip": "Precision German Performance",
+    "specs": {
+      "engine": "4.0L Flat-6",
+      "horsepower": "518 HP",
+      "topSpeed": "315 km/h",
+      "acceleration": "0-100 km/h in 3.2s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari LaFerrari Aperta",
+    "year": 2016,
+    "price": 25799950,
+    "body": "convertible",
+    "image": "https://via.placeholder.com/300x200?text=Ferrari+LaFerrari",
+    "tooltip": "Iconic Ferrari Hybrid Power",
+    "specs": {
+      "engine": "6.3L V12 + Electric",
+      "horsepower": "950 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche 911 GT3 RS Weissach",
+    "year": 2025,
+    "price": 1519995,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Porsche+911",
+    "tooltip": "Latest Porsche Innovation",
+    "specs": {
+      "engine": "4.0L Flat-6",
+      "horsepower": "525 HP",
+      "topSpeed": "318 km/h",
+      "acceleration": "0-100 km/h in 3.1s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Aventador Ultimae",
+    "year": 2023,
+    "price": 1899950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Aventador",
+    "tooltip": "Italian Supercar Excellence",
+    "specs": {
+      "engine": "6.5L V12",
+      "horsepower": "769 HP",
+      "topSpeed": "355 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Chiron Super Sport",
+    "year": 2022,
+    "price": 3499950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Bugatti+Chiron",
+    "tooltip": "Hypercar Speed King",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1578 HP",
+      "topSpeed": "420 km/h",
+      "acceleration": "0-100 km/h in 2.4s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren P1 GTR",
+    "year": 2015,
+    "price": 2999950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=McLaren+P1",
+    "tooltip": "Track-Focused Hypercar",
+    "specs": {
+      "engine": "3.8L V8 + Electric",
+      "horsepower": "986 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin Valkyrie",
+    "year": 2023,
+    "price": 3199950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+Valkyrie",
+    "tooltip": "British Engineering Marvel",
+    "specs": {
+      "engine": "6.5L V12 + Electric",
+      "horsepower": "1160 HP",
+      "topSpeed": "354 km/h",
+      "acceleration": "0-100 km/h in 2.6s"
+    }
+  },
+  {
+    "brand": "koenigsegg",
+    "name": "Koenigsegg Jesko Absolut",
+    "year": 2024,
+    "price": 3999950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Koenigsegg+Jesko",
+    "tooltip": "Swedish Speed Monster",
+    "specs": {
+      "engine": "5.0L V8",
+      "horsepower": "1600 HP",
+      "topSpeed": "480 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari SF90 Stradale",
+    "year": 2021,
+    "price": 1699950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Ferrari+SF90",
+    "tooltip": "Ferrari Hybrid Performance",
+    "specs": {
+      "engine": "4.0L V8 + Electric",
+      "horsepower": "986 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Huracán Tecnica",
+    "year": 2023,
+    "price": 1299950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Huracán",
+    "tooltip": "Aggressive Italian Design",
+    "specs": {
+      "engine": "5.2L V10",
+      "horsepower": "631 HP",
+      "topSpeed": "325 km/h",
+      "acceleration": "0-100 km/h in 3.2s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche Taycan Turbo S",
+    "year": 2024,
+    "price": 1199950,
+    "body": "sedan",
+    "image": "https://via.placeholder.com/300x200?text=Porsche+Taycan",
+    "tooltip": "Electric Performance Beast",
+    "specs": {
+      "engine": "Dual Electric Motors",
+      "horsepower": "750 HP",
+      "topSpeed": "260 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "rimac",
+    "name": "Rimac C_Two",
+    "year": 2023,
+    "price": 2499950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Rimac+C_Two",
+    "tooltip": "Electric Hypercar Pioneer",
+    "specs": {
+      "engine": "Four Electric Motors",
+      "horsepower": "1914 HP",
+      "topSpeed": "412 km/h",
+      "acceleration": "0-100 km/h in 1.9s"
+    }
+  },
+  {
+    "brand": "pagani",
+    "name": "Pagani Huayra R",
+    "year": 2022,
+    "price": 3199950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Pagani+Huayra",
+    "tooltip": "Italian Craftsmanship Art",
+    "specs": {
+      "engine": "6.0L V12",
+      "horsepower": "850 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 3.0s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari 488 Pista",
+    "year": 2020,
+    "price": 1399950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Ferrari+488",
+    "tooltip": "Track-Ready Ferrari",
+    "specs": {
+      "engine": "3.9L V8",
+      "horsepower": "710 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.85s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Veneno",
+    "year": 2014,
+    "price": 4499950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Veneno",
+    "tooltip": "Rare Italian Masterpiece",
+    "specs": {
+      "engine": "6.5L V12",
+      "horsepower": "740 HP",
+      "topSpeed": "355 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Divo",
+    "year": 2021,
+    "price": 5799950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Bugatti+Divo",
+    "tooltip": "Ultimate Track Hypercar",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1479 HP",
+      "topSpeed": "380 km/h",
+      "acceleration": "0-100 km/h in 2.4s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren Senna",
+    "year": 2019,
+    "price": 1999950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=McLaren+Senna",
+    "tooltip": "Tribute to a Legend",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "789 HP",
+      "topSpeed": "335 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin DB11 AMR",
+    "year": 2022,
+    "price": 1599950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+DB11",
+    "tooltip": "British Luxury Performance",
+    "specs": {
+      "engine": "5.2L V12",
+      "horsepower": "630 HP",
+      "topSpeed": "334 km/h",
+      "acceleration": "0-100 km/h in 3.7s"
+    }
+  },
+  {
+    "brand": "koenigsegg",
+    "name": "Koenigsegg Regera",
+    "year": 2020,
+    "price": 2799950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Koenigsegg+Regera",
+    "tooltip": "Hybrid Swedish Hypercar",
+    "specs": {
+      "engine": "5.0L V8 + Electric",
+      "horsepower": "1500 HP",
+      "topSpeed": "410 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari 812 Superfast",
+    "year": 2018,
+    "price": 1499950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Ferrari+812",
+    "tooltip": "Powerful Ferrari V12",
+    "specs": {
+      "engine": "6.5L V12",
+      "horsepower": "789 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Urus Performante",
+    "year": 2024,
+    "price": 1699950,
+    "body": "suv",
+    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Urus",
+    "tooltip": "Fastest Luxury SUV",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "657 HP",
+      "topSpeed": "306 km/h",
+      "acceleration": "0-100 km/h in 3.3s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche 918 Spyder",
+    "year": 2015,
+    "price": 2199950,
+    "body": "convertible",
+    "image": "https://via.placeholder.com/300x200?text=Porsche+918",
+    "tooltip": "Hybrid Porsche Excellence",
+    "specs": {
+      "engine": "4.6L V8 + Electric",
+      "horsepower": "887 HP",
+      "topSpeed": "345 km/h",
+      "acceleration": "0-100 km/h in 2.6s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Veyron Grand Sport",
+    "year": 2013,
+    "price": 2999950,
+    "body": "convertible",
+    "image": "https://via.placeholder.com/300x200?text=Bugatti+Veyron",
+    "tooltip": "Legendary Speed Icon",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1001 HP",
+      "topSpeed": "407 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren 720S",
+    "year": 2021,
+    "price": 1399950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=McLaren+720S",
+    "tooltip": "Dynamic British Supercar",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "710 HP",
+      "topSpeed": "341 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin Vanquish Zagato",
+    "year": 2019,
+    "price": 1799950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+Vanquish",
+    "tooltip": "Exclusive British Design",
+    "specs": {
+      "engine": "6.0L V12",
+      "horsepower": "595 HP",
+      "topSpeed": "324 km/h",
+      "acceleration": "0-100 km/h in 3.5s"
+    }
+  },
+  {
+    "brand": "koenigsegg",
+    "name": "Koenigsegg Agera RS",
+    "year": 2017,
+    "price": 2599950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Koenigsegg+Agera",
+    "tooltip": "Record-Breaking Hypercar",
+    "specs": {
+      "engine": "5.0L V8",
+      "horsepower": "1160 HP",
+      "topSpeed": "447 km/h",
+      "acceleration": "0-100 km/h in 2.6s"
+    }
+  },
+  {
+    "brand": "pagani",
+    "name": "Pagani Zonda Cinque",
+    "year": 2010,
+    "price": 3999950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Pagani+Zonda",
+    "tooltip": "Limited Edition Masterpiece",
+    "specs": {
+      "engine": "7.3L V12",
+      "horsepower": "678 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 3.4s"
+    }
+  },
+  {
+    "brand": "rimac",
+    "name": "Rimac Nevera",
+    "year": 2024,
+    "price": 2299950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Rimac+Nevera",
+    "tooltip": "Fastest Electric Hypercar",
+    "specs": {
+      "engine": "Four Electric Motors",
+      "horsepower": "1914 HP",
+      "topSpeed": "412 km/h",
+      "acceleration": "0-100 km/h in 1.85s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari F8 Tributo",
+    "year": 2022,
+    "price": 1299950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Ferrari+F8",
+    "tooltip": "Tribute to V8 Legacy",
+    "specs": {
+      "engine": "3.9L V8",
+      "horsepower": "710 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Gallardo LP570-4",
+    "year": 2013,
+    "price": 999950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Gallardo",
+    "tooltip": "Classic Italian Performance",
+    "specs": {
+      "engine": "5.2L V10",
+      "horsepower": "562 HP",
+      "topSpeed": "325 km/h",
+      "acceleration": "0-100 km/h in 3.4s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche Panamera Turbo S",
+    "year": 2023,
+    "price": 1399950,
+    "body": "sedan",
+    "image": "https://via.placeholder.com/300x200?text=Porsche+Panamera",
+    "tooltip": "Luxury Performance Sedan",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "620 HP",
+      "topSpeed": "315 km/h",
+      "acceleration": "0-100 km/h in 3.1s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Centodieci",
+    "year": 2022,
+    "price": 8999950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Bugatti+Centodieci",
+    "tooltip": "Homage to EB110",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1578 HP",
+      "topSpeed": "380 km/h",
+      "acceleration": "0-100 km/h in 2.4s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren 765LT",
+    "year": 2021,
+    "price": 1599950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=McLaren+765LT",
+    "tooltip": "Lightweight Track Beast",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "755 HP",
+      "topSpeed": "330 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin Vantage AMR",
+    "year": 2020,
+    "price": 1299950,
+    "body": "coupe",
+    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+Vantage",
+    "tooltip": "Sporty British Elegance",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "503 HP",
+      "topSpeed": "314 km/h",
+      "acceleration": "0-100 km/h in 3.5s"
+    }
+  }
+]
