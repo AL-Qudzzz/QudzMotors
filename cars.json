@@ -5,7 +5,7 @@
     "year": 2022,
     "price": 1399950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Maserati+MC20",
+    "image": "image/Maserati/Maserati_MC20.jpg",
     "tooltip": "Luxury Italian Engineering",
     "specs": {
       "engine": "3.0L V6",
@@ -20,7 +20,7 @@
     "year": 2024,
     "price": 1499950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Porsche+911",
+    "image": "image/Porsche/Porsche_911GT3RS.jpg",
     "tooltip": "Precision German Performance",
     "specs": {
       "engine": "4.0L Flat-6",
@@ -35,7 +35,7 @@
     "year": 2016,
     "price": 25799950,
     "body": "convertible",
-    "image": "https://via.placeholder.com/300x200?text=Ferrari+LaFerrari",
+    "image": "image/Ferrari/Ferrari_LaFerrari_Aperta.jpg",
     "tooltip": "Iconic Ferrari Hybrid Power",
     "specs": {
       "engine": "6.3L V12 + Electric",
@@ -45,27 +45,12 @@
     }
   },
   {
-    "brand": "porsche",
-    "name": "Porsche 911 GT3 RS Weissach",
-    "year": 2025,
-    "price": 1519995,
-    "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Porsche+911",
-    "tooltip": "Latest Porsche Innovation",
-    "specs": {
-      "engine": "4.0L Flat-6",
-      "horsepower": "525 HP",
-      "topSpeed": "318 km/h",
-      "acceleration": "0-100 km/h in 3.1s"
-    }
-  },
-  {
     "brand": "lamborghini",
     "name": "Lamborghini Aventador Ultimae",
     "year": 2023,
     "price": 1899950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Aventador",
+    "image": "https://cdn.motor1.com/images/mgl/4JyZA/s1/lamborghini-aventador-lp-780-4-ultimae.webp",
     "tooltip": "Italian Supercar Excellence",
     "specs": {
       "engine": "6.5L V12",
