@@ -65,7 +65,7 @@
     "year": 2022,
     "price": 3499950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Bugatti+Chiron",
+    "image": "https://assets.blackxperience.com/content/blackauto/autonews/bugatti-chiron-super-sport-first-customer-deliveries.jpg",
     "tooltip": "Hypercar Speed King",
     "specs": {
       "engine": "8.0L W16",
@@ -80,7 +80,7 @@
     "year": 2015,
     "price": 2999950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=McLaren+P1",
+    "image": "https://imgcdnblog.carvaganza.com/wp-content/uploads/2016/05/McLaren-P1-GTR-Dijual-%E2%82%AC4-Juta-2.jpg",
     "tooltip": "Track-Focused Hypercar",
     "specs": {
       "engine": "3.8L V8 + Electric",
@@ -95,7 +95,7 @@
     "year": 2023,
     "price": 3199950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+Valkyrie",
+    "image": "https://www.amalgamcollection.com/cdn/shop/files/Wideeditgreen_2000x850_crop_center.jpg?v=1702486189",
     "tooltip": "British Engineering Marvel",
     "specs": {
       "engine": "6.5L V12 + Electric",
@@ -110,7 +110,7 @@
     "year": 2024,
     "price": 3999950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Koenigsegg+Jesko",
+    "image": "https://www.gamereactor.asia/media/96/koenigseggbelievesjesko_4289633_650x.jpg",
     "tooltip": "Swedish Speed Monster",
     "specs": {
       "engine": "5.0L V8",
@@ -125,7 +125,7 @@
     "year": 2021,
     "price": 1699950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Ferrari+SF90",
+    "image": "https://asset.kompas.com/crops/Vp_MUfwOTd8i4DAIb6VBD7mG7GU=/44x94:1275x914/1200x800/data/photo/2021/03/28/606010c3979de.jpeg",
     "tooltip": "Ferrari Hybrid Performance",
     "specs": {
       "engine": "4.0L V8 + Electric",
@@ -140,7 +140,7 @@
     "year": 2023,
     "price": 1299950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Huracán",
+    "image": "https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_240,q_auto:good,w_385/pil6borxyuucbqrljs5c.jpg",
     "tooltip": "Aggressive Italian Design",
     "specs": {
       "engine": "5.2L V10",
@@ -155,7 +155,7 @@
     "year": 2024,
     "price": 1199950,
     "body": "sedan",
-    "image": "https://via.placeholder.com/300x200?text=Porsche+Taycan",
+    "image": "https://imgcdn.oto.com/large/gallery/exterior/31/2340/porsche-taycan-front-angle-low-view-450516.jpg",
     "tooltip": "Electric Performance Beast",
     "specs": {
       "engine": "Dual Electric Motors",
@@ -166,11 +166,11 @@
   },
   {
     "brand": "rimac",
-    "name": "Rimac C_Two",
+    "name": "Rimac C Two",
     "year": 2023,
     "price": 2499950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Rimac+C_Two",
+    "image": "https://hybrid.co.id/wp-content/uploads/2018/03/e260688f1e0e9f8d8306e2efbef92aec_rimac-c-two-01-825x510.jpg",
     "tooltip": "Electric Hypercar Pioneer",
     "specs": {
       "engine": "Four Electric Motors",
@@ -185,7 +185,7 @@
     "year": 2022,
     "price": 3199950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Pagani+Huayra",
+    "image": "https://cdn.rmsothebys.com/7/d/2/0/5/1/7d2051407e8d49c1d0216bc2d27ac9744206f095.webp",
     "tooltip": "Italian Craftsmanship Art",
     "specs": {
       "engine": "6.0L V12",
@@ -200,7 +200,7 @@
     "year": 2020,
     "price": 1399950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Ferrari+488",
+    "image": "https://issimi-vehicles-cdn.b-cdn.net/publicamlvehiclemanagement/VehicleDetails/496/timestamped-1707481260143-2019Ferrari488-1.jpg?width=3840&quality=75",
     "tooltip": "Track-Ready Ferrari",
     "specs": {
       "engine": "3.9L V8",
@@ -215,7 +215,7 @@
     "year": 2014,
     "price": 4499950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Veneno",
+    "image": "https://robbreport.com/wp-content/uploads/2024/04/2-w-SBX_Veneno_008_828c1e.jpg?w=1024",
     "tooltip": "Rare Italian Masterpiece",
     "specs": {
       "engine": "6.5L V12",
@@ -230,7 +230,7 @@
     "year": 2021,
     "price": 5799950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Bugatti+Divo",
+    "image": "https://cdn.motor1.com/images/mgl/gZlkg/s1/bugatti-divo-front-view.webp",
     "tooltip": "Ultimate Track Hypercar",
     "specs": {
       "engine": "8.0L W16",
@@ -245,7 +245,7 @@
     "year": 2019,
     "price": 1999950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=McLaren+Senna",
+    "image": "https://imgx.gridoto.com/crop/0x0:0x0/750x500/photo/2021/02/01/466860162jpg-20210201015022.jpg",
     "tooltip": "Tribute to a Legend",
     "specs": {
       "engine": "4.0L V8",
@@ -260,7 +260,7 @@
     "year": 2022,
     "price": 1599950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+DB11",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/aston-martin-db11-amr-china-grey-7-1526570242.jpg",
     "tooltip": "British Luxury Performance",
     "specs": {
       "engine": "5.2L V12",
@@ -275,7 +275,7 @@
     "year": 2020,
     "price": 2799950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Koenigsegg+Regera",
+    "image": "https://www.supervettura.com/blobs/Cars/123/5aca99e9-6ac1-4a28-92d7-03c1e4bdc365.jpg?width=1920&height=1080&mode=crop",
     "tooltip": "Hybrid Swedish Hypercar",
     "specs": {
       "engine": "5.0L V8 + Electric",
@@ -290,7 +290,7 @@
     "year": 2018,
     "price": 1499950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Ferrari+812",
+    "image": "https://issimi-vehicles-cdn.b-cdn.net/publicamlvehiclemanagement/VehicleDetails/668/timestamped-1730178483559-1-2019-Ferrari-812-245747.jpg",
     "tooltip": "Powerful Ferrari V12",
     "specs": {
       "engine": "6.5L V12",
@@ -305,7 +305,7 @@
     "year": 2024,
     "price": 1699950,
     "body": "suv",
-    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Urus",
+    "image": "https://cdn.motor1.com/images/mgl/2NNknE/s1/lamborghini-urus-performante.jpg",
     "tooltip": "Fastest Luxury SUV",
     "specs": {
       "engine": "4.0L V8",
@@ -320,7 +320,7 @@
     "year": 2015,
     "price": 2199950,
     "body": "convertible",
-    "image": "https://via.placeholder.com/300x200?text=Porsche+918",
+    "image": "https://cdn.motor1.com/images/mgl/g40OZP/s1/2015-porsche-918-spyder.webp",
     "tooltip": "Hybrid Porsche Excellence",
     "specs": {
       "engine": "4.6L V8 + Electric",
@@ -335,7 +335,7 @@
     "year": 2013,
     "price": 2999950,
     "body": "convertible",
-    "image": "https://via.placeholder.com/300x200?text=Bugatti+Veyron",
+    "image": "https://cdn.motor1.com/images/mgl/RGJmA/s1/2008-bugatti-grand-sport-restoration-exterior-view.jpg",
     "tooltip": "Legendary Speed Icon",
     "specs": {
       "engine": "8.0L W16",
@@ -350,7 +350,7 @@
     "year": 2021,
     "price": 1399950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=McLaren+720S",
+    "image": "https://mclaren.scene7.com/is/image/mclaren/720S-Coupe_hero:crop-16x9?wid=1920&hei=1080",
     "tooltip": "Dynamic British Supercar",
     "specs": {
       "engine": "4.0L V8",
@@ -365,7 +365,7 @@
     "year": 2019,
     "price": 1799950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+Vanquish",
+    "image": "https://robbreport.com/wp-content/uploads/2024/11/zagshootingbrake01.jpg?w=1024",
     "tooltip": "Exclusive British Design",
     "specs": {
       "engine": "6.0L V12",
@@ -380,7 +380,7 @@
     "year": 2017,
     "price": 2599950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Koenigsegg+Agera",
+    "image": "https://www.supervettura.com/blobs/Cars/96/03b61a3d-2433-4f46-b240-3eb193c1d68c.jpg?width=1920&height=1080&mode=crop",
     "tooltip": "Record-Breaking Hypercar",
     "specs": {
       "engine": "5.0L V8",
@@ -395,7 +395,7 @@
     "year": 2010,
     "price": 3999950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Pagani+Zonda",
+    "image": "https://www.supercars.net/blog/wp-content/uploads/2020/10/2009-Pagani-Zonda-Cinque-Roadster-007-2160-scaled.jpg",
     "tooltip": "Limited Edition Masterpiece",
     "specs": {
       "engine": "7.3L V12",
@@ -410,7 +410,7 @@
     "year": 2024,
     "price": 2299950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Rimac+Nevera",
+    "image": "https://web-cdn.rimac-automobili.com/wp-content/uploads/2021/05/31101405/intro_slider_07_optimised.jpg",
     "tooltip": "Fastest Electric Hypercar",
     "specs": {
       "engine": "Four Electric Motors",
@@ -425,7 +425,7 @@
     "year": 2022,
     "price": 1299950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Ferrari+F8",
+    "image": "https://cdn.motor1.com/images/mgl/ykkwb/s1/novitec-ferrari-f8-tributo-n-largo.jpg",
     "tooltip": "Tribute to V8 Legacy",
     "specs": {
       "engine": "3.9L V8",
@@ -440,7 +440,7 @@
     "year": 2013,
     "price": 999950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Lamborghini+Gallardo",
+    "image": "https://www.carscoops.com/wp-content/uploads/2020/04/2014-lamborghini-gallardo-squadra-corse-mecum-25-1024x554.jpg",
     "tooltip": "Classic Italian Performance",
     "specs": {
       "engine": "5.2L V10",
@@ -455,7 +455,7 @@
     "year": 2023,
     "price": 1399950,
     "body": "sedan",
-    "image": "https://via.placeholder.com/300x200?text=Porsche+Panamera",
+    "image": "https://imgcdn.oto.com/large/gallery/exterior/31/248/porsche-panamera-front-angle-low-view-659479.jpg",
     "tooltip": "Luxury Performance Sedan",
     "specs": {
       "engine": "4.0L V8",
@@ -470,7 +470,7 @@
     "year": 2022,
     "price": 8999950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Bugatti+Centodieci",
+    "image": "https://cdn.motor1.com/images/mgl/zxp3Jb/s1/bugatti-centodieci-2022-zehntes-und-letztes-exemplar.webp",
     "tooltip": "Homage to EB110",
     "specs": {
       "engine": "8.0L W16",
@@ -485,7 +485,7 @@
     "year": 2021,
     "price": 1599950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=McLaren+765LT",
+    "image": "https://cdn.motor1.com/images/mgl/nA9VJ1/s1/mclaren-765lt-by-novitec.webp",
     "tooltip": "Lightweight Track Beast",
     "specs": {
       "engine": "4.0L V8",
@@ -500,7 +500,7 @@
     "year": 2020,
     "price": 1299950,
     "body": "coupe",
-    "image": "https://via.placeholder.com/300x200?text=Aston+Martin+Vantage",
+    "image": "https://www.classicdriver.com/sites/default/files/users/33362/cars_images/feed_924321/ec1726869d1e06fef24b1acd73461830.jpeg",
     "tooltip": "Sporty British Elegance",
     "specs": {
       "engine": "4.0L V8",
