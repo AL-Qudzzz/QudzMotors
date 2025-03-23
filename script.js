@@ -44,7 +44,7 @@ function currentSlide(n) {
 // Inisialisasi slideshow
 showSlides(slideIndex);
 
-// Fungsi untuk memuat data mobil dari JSON dan menampilkannya
+// Fungsi untuk memuat data mobil dari JSON
 async function loadCars() {
   try {
     const response = await fetch("cars.json");
@@ -67,6 +67,7 @@ function displayCars(cars) {
     carCard.setAttribute("data-year", car.year);
     carCard.setAttribute("data-price", car.price);
     carCard.setAttribute("data-body", car.body);
+    carCard.setAttribute("data-drivetrain", car.drivetrain); // Tambahkan data-drivetrain
     carCard.setAttribute("data-tooltip", car.tooltip);
     carCard.setAttribute("data-specs", JSON.stringify(car.specs));
     carCard.setAttribute("data-name", car.name.toLowerCase()); // Untuk pencarian
@@ -171,7 +172,9 @@ function filterCars() {
       if (max ? carPrice < min || carPrice > max : carPrice > min) show = false;
     }
     if (bodyType !== "all" && car.body !== bodyType) show = false;
-    // Tambahkan logika filter untuk driveType dan specs jika diperlukan
+    if (driveType !== "all" && car.drivetrain.toLowerCase() !== driveType)
+      show = false; // Filter drivetrain
+    // Tambahkan logika filter untuk specs jika diperlukan
     return show;
   });
 
