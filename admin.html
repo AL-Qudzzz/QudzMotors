@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Qudz Motors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">QUDZ MOTORS - ADMIN</div>
+    </header>
+
+    <section class="admin-login" id="loginSection">
+      <h2>Admin Login</h2>
+      <input type="password" id="adminPassword" placeholder="Enter password" />
+      <button onclick="login()">Login</button>
+    </section>
+
+    <section
+      class="admin-dashboard"
+      id="dashboardSection"
+      style="display: none"
+    >
+      <h2>Manage Cars</h2>
+      <div class="crud-form">
+        <h3>Add/Edit Car</h3>
+        <input type="text" id="carBrand" placeholder="Brand" />
+        <input type="text" id="carName" placeholder="Name" />
+        <input type="number" id="carYear" placeholder="Year" />
+        <input type="number" id="carPrice" placeholder="Price (USD)" />
+        <input type="text" id="carBody" placeholder="Body Type" />
+        <input type="text" id="carImage" placeholder="Image URL" />
+        <input type="text" id="carTooltip" placeholder="Tooltip" />
+        <input type="text" id="carDrivetrain" placeholder="Drivetrain" />
+        <input type="text" id="carEngine" placeholder="Engine" />
+        <input type="text" id="carHorsepower" placeholder="Horsepower" />
+        <input type="text" id="carTopSpeed" placeholder="Top Speed" />
+        <input type="text" id="carAcceleration" placeholder="Acceleration" />
+        <button onclick="addCar()">Add Car</button>
+      </div>
+
+      <div class="car-table">
+        <h3>Car List</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Brand</th>
+              <th>Year</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="carTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

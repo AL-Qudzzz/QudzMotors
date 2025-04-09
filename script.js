@@ -75,7 +75,7 @@ function displayCars(cars) {
     carCard.innerHTML = `
             <img src="${car.image}" alt="${car.name}">
             <h3>${car.name}</h3>
-            <p>Price: AED ${car.price.toLocaleString()}</p>
+            <p>Price: $ ${car.price.toLocaleString()}</p>
             <p>Year: ${car.year} | 0 km</p>
         `;
 
@@ -191,3 +191,17 @@ function filterCars() {
 
 // Muat data mobil saat halaman dimuat
 document.addEventListener("DOMContentLoaded", loadCars);
+
+async function loadCars() {
+  try {
+    carsData = JSON.parse(localStorage.getItem("carsData")) || [];
+    if (carsData.length === 0) {
+      const response = await fetch("cars.json");
+      carsData = await response.json();
+      localStorage.setItem("carsData", JSON.stringify(carsData));
+    }
+    displayCars(carsData);
+  } catch (error) {
+    console.error("Error loading cars:", error);
+  }
+}
