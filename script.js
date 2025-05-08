@@ -9,6 +9,14 @@ function toggleMenu() {
   nav.classList.toggle("active");
 }
 
+// Fungsi untuk toggle filter menu
+function toggleFilters() {
+  const filterSection = document.getElementById("filterSection");
+  const filterToggle = document.querySelector(".filter-toggle");
+  filterSection.classList.toggle("active");
+  filterToggle.classList.toggle("active");
+}
+
 // Fungsi untuk menampilkan slide
 function showSlides(n) {
   if (n >= slides.length) slideIndex = 0;
