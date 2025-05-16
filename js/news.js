@@ -71,14 +71,18 @@ async function loadApiNews() {
     }
 }
 
-// Load custom news from localStorage
-function loadCustomNews() {
-    const customNews = JSON.parse(localStorage.getItem('customNews')) || [];
-    newsData.custom = customNews.map(news => ({
-        ...news,
-        type: 'custom'
-    }));
-    displayNews();
+// Load custom news from Firebase
+async function loadCustomNews() {
+    try {
+        const customNews = await firebaseDB.getNews();
+        newsData.custom = customNews.map(news => ({
+            ...news,
+            type: 'custom'
+        }));
+        displayNews();
+    } catch (error) {
+        console.error("Error loading custom news:", error);
+    }
 }
 
 // Get filtered news based on current filter
@@ -115,9 +119,11 @@ function displayNews() {
 function createNewsCard(news) {
     const card = document.createElement('div');
     card.className = 'news-card';
+    const defaultImage = '../assets/image/default-news-image.jpg';
+    const imagePath = news.imageUrl.startsWith('http') ? news.imageUrl : `../assets/image/${news.imageUrl}`;
     card.innerHTML = `
         <div class="news-image">
-            <img src="${news.imageUrl || 'default-news-image.jpg'}" alt="${news.title}">
+            <img src="${imagePath}" alt="${news.title}">
         </div>
         <div class="news-info">
             <h3>${news.title}</h3>
@@ -140,9 +146,10 @@ function showNewsPopup(news) {
     document.getElementById('popupTitle').textContent = news.title;
     document.getElementById('popupDate').textContent = formatDate(news.publishedAt);
     document.getElementById('popupSource').textContent = news.source;
-    document.getElementById('popupImage').src = news.imageUrl || 'default-news-image.jpg';
+    document.getElementById('popupImage').src = news.imageUrl || '../assets/image/default-news-image.jpg';
     document.getElementById('popupContent').textContent = news.content || news.description;
-    document.getElementById('popupLink').href = news.url;
+    document.getElementById('popupLink').href = news.url || '#';
+    document.getElementById('popupLink').target = '_blank';
     popup.style.display = 'flex';
 }
 

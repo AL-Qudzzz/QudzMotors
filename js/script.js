@@ -55,8 +55,7 @@ showSlides(slideIndex);
 // Fungsi untuk memuat data mobil dari JSON
 async function loadCars() {
   try {
-    const response = await fetch("cars.json");
-    carsData = await response.json();
+    carsData = await firebaseDB.getCars();
     displayCars(carsData);
   } catch (error) {
     console.error("Error loading cars:", error);
@@ -80,8 +79,11 @@ function displayCars(cars) {
     carCard.setAttribute("data-specs", JSON.stringify(car.specs));
     carCard.setAttribute("data-name", car.name.toLowerCase()); // Untuk pencarian
 
+    // Update image path to use assets folder
+    const imagePath = car.image.startsWith('http') ? car.image : `../assets/${car.image}`;
+    
     carCard.innerHTML = `
-            <img src="${car.image}" alt="${car.name}">
+            <img src="${imagePath}" alt="${car.name}">
             <h3>${car.name}</h3>
             <p>Price: $ ${car.price.toLocaleString()}</p>
             <p>Year: ${car.year} | 0 km</p>
@@ -199,17 +201,3 @@ function filterCars() {
 
 // Muat data mobil saat halaman dimuat
 document.addEventListener("DOMContentLoaded", loadCars);
-
-async function loadCars() {
-  try {
-    carsData = JSON.parse(localStorage.getItem("carsData")) || [];
-    if (carsData.length === 0) {
-      const response = await fetch("cars.json");
-      carsData = await response.json();
-      localStorage.setItem("carsData", JSON.stringify(carsData));
-    }
-    displayCars(carsData);
-  } catch (error) {
-    console.error("Error loading cars:", error);
-  }
-}
