@@ -25,6 +25,9 @@
 
       <div id="carsTab" class="tab-content active">
         <h2>Manage Cars</h2>
+        <div class="admin-actions">
+          <button onclick="cleanupCars()" class="cleanup-btn">Clean Up Duplicate Cars</button>
+        </div>
         <div class="crud-form">
           <h3>Add/Edit Car</h3>
           <input type="text" id="carBrand" placeholder="Brand" />
@@ -61,6 +64,9 @@
 
       <div id="newsTab" class="tab-content">
         <h2>Manage News</h2>
+        <div class="admin-actions">
+          <button onclick="cleanupNews()" class="cleanup-btn">Clean Up Duplicate News</button>
+        </div>
         <div class="crud-form">
           <h3>Add News</h3>
           <input type="text" id="newsTitle" placeholder="Title" />

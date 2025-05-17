@@ -104,30 +104,41 @@ function loadCarTable() {
 async function addCar() {
   try {
     const car = {
-      brand: document.getElementById("carBrand").value,
-      name: document.getElementById("carName").value,
+      brand: document.getElementById("carBrand").value.trim(),
+      name: document.getElementById("carName").value.trim(),
       year: parseInt(document.getElementById("carYear").value),
       price: parseInt(document.getElementById("carPrice").value),
-      body: document.getElementById("carBody").value,
-      image: document.getElementById("carImage").value,
-      tooltip: document.getElementById("carTooltip").value,
-      drivetrain: document.getElementById("carDrivetrain").value,
+      body: document.getElementById("carBody").value.trim(),
+      image: document.getElementById("carImage").value.trim(),
+      tooltip: document.getElementById("carTooltip").value.trim(),
+      drivetrain: document.getElementById("carDrivetrain").value.trim(),
       specs: {
-        engine: document.getElementById("carEngine").value,
-        horsepower: document.getElementById("carHorsepower").value,
-        topSpeed: document.getElementById("carTopSpeed").value,
-        acceleration: document.getElementById("carAcceleration").value,
+        engine: document.getElementById("carEngine").value.trim(),
+        horsepower: document.getElementById("carHorsepower").value.trim(),
+        topSpeed: document.getElementById("carTopSpeed").value.trim(),
+        acceleration: document.getElementById("carAcceleration").value.trim(),
       },
     };
+
+    // Validate required fields
+    if (!car.brand || !car.name || !car.year || !car.price) {
+      alert("Please fill in all required fields (Brand, Name, Year, Price)");
+      return;
+    }
 
     const carId = await firebaseDB.addCar(car);
     car.id = carId;
     carsData.push(car);
     loadCarTable();
     clearCarForm();
+    alert("Car added successfully!");
   } catch (error) {
     console.error("Error adding car:", error);
-    alert("Failed to add car. Please try again.");
+    if (error.message.includes("already exists")) {
+      alert(error.message);
+    } else {
+      alert("Failed to add car. Please try again.");
+    }
   }
 }
 
@@ -227,22 +238,33 @@ function loadNewsTable() {
 async function addNews() {
   try {
     const news = {
-      title: document.getElementById("newsTitle").value,
-      content: document.getElementById("newsContent").value,
-      imageUrl: document.getElementById("newsImage").value,
-      source: document.getElementById("newsSource").value,
+      title: document.getElementById("newsTitle").value.trim(),
+      content: document.getElementById("newsContent").value.trim(),
+      imageUrl: document.getElementById("newsImage").value.trim(),
+      source: document.getElementById("newsSource").value.trim(),
       publishedAt: new Date().toISOString(),
-      url: document.getElementById("newsUrl").value
+      url: document.getElementById("newsUrl").value.trim()
     };
+
+    // Validate required fields
+    if (!news.title || !news.content || !news.source) {
+      alert("Please fill in all required fields (Title, Content, Source)");
+      return;
+    }
 
     const newsId = await firebaseDB.addNews(news);
     news.id = newsId;
     customNews.push(news);
     loadNewsTable();
     clearNewsForm();
+    alert("News added successfully!");
   } catch (error) {
     console.error("Error adding news:", error);
-    alert("Failed to add news. Please try again.");
+    if (error.message.includes("already exists")) {
+      alert(error.message);
+    } else {
+      alert("Failed to add news. Please try again.");
+    }
   }
 }
 
@@ -327,19 +349,36 @@ function clearNewsForm() {
   document.getElementById("newsSource").value = "";
 }
 
-// Load initial data from cars.json if Firebase is empty
-async function loadInitialCars() {
+// Cleanup Functions
+async function cleanupCars() {
+  if (!confirm("Are you sure you want to clean up duplicate cars? This action cannot be undone.")) {
+    return;
+  }
+
   try {
-    const cars = await firebaseDB.getCars();
-    if (cars.length === 0) {
-      const response = await fetch("../assets/cars.json");
-      const data = await response.json();
-      for (const car of data) {
-        await firebaseDB.addCar(car);
-      }
-    }
+    const result = await firebaseDB.cleanupDuplicateCars();
+    alert(`Cleanup completed!\nTotal cars: ${result.totalCars}\nUnique cars: ${result.uniqueCars}\nDeleted duplicates: ${result.deletedDuplicates}`);
+    // Reload the data
+    await loadInitialData();
   } catch (error) {
-    console.error("Error loading initial cars:", error);
+    console.error("Error cleaning up cars:", error);
+    alert("Failed to clean up duplicate cars. Please try again.");
+  }
+}
+
+async function cleanupNews() {
+  if (!confirm("Are you sure you want to clean up duplicate news? This action cannot be undone.")) {
+    return;
+  }
+
+  try {
+    const result = await firebaseDB.cleanupDuplicateNews();
+    alert(`Cleanup completed!\nTotal news: ${result.totalNews}\nUnique news: ${result.uniqueNews}\nDeleted duplicates: ${result.deletedDuplicates}`);
+    // Reload the data
+    await loadInitialData();
+  } catch (error) {
+    console.error("Error cleaning up news:", error);
+    alert("Failed to clean up duplicate news. Please try again.");
   }
 }
 
