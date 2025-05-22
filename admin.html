@@ -12,86 +12,112 @@
     </header>
 
     <section class="admin-login" id="loginSection">
-      <h2>Admin Login</h2>
-      <input type="password" id="adminPassword" placeholder="Enter password" />
-      <button onclick="login()">Login</button>
+      <div class="admin-login-card">
+        <h2>Admin Login</h2>
+        <input type="password" id="adminPassword" placeholder="Enter password" />
+        <button onclick="login()">Login</button>
+      </div>
     </section>
 
     <section class="admin-dashboard" id="dashboardSection" style="display: none">
-      <div class="admin-tabs">
-        <button class="tab-btn active" onclick="switchTab('cars')">Manage Cars</button>
-        <button class="tab-btn" onclick="switchTab('news')">Manage News</button>
+      <div class="admin-sidebar">
+        <div class="logo">QUDZ MOTORS - ADMIN</div>
+        <nav class="admin-tabs" role="tablist" aria-label="Admin Dashboard Tabs">
+          <button class="tab-btn active" onclick="switchTab('cars')" role="tab" aria-selected="true" aria-controls="carsTab" id="carsTabBtn">Manage Cars</button>
+          <button class="tab-btn" onclick="switchTab('news')" role="tab" aria-selected="false" aria-controls="newsTab" id="newsTabBtn">Manage News</button>
+        </nav>
       </div>
+      <main class="admin-main-content" role="tabpanel" tabindex="0">
+        <section id="carsTab" class="tab-content active" role="tabpanel" aria-labelledby="carsTabBtn">
+          <h2>Manage Cars</h2>
+          <div class="admin-actions">
+            <button onclick="cleanupCars()" class="cleanup-btn" aria-label="Clean Up Duplicate Cars">Clean Up Duplicate Cars</button>
+          </div>
+          <div class="admin-content-row">
+            <form class="crud-form" aria-label="Add or Edit Car Form">
+              <h3>Add/Edit Car</h3>
+              <div class="form-row">
+                <input type="text" id="carBrand" placeholder="Brand" aria-required="true" />
+                <input type="text" id="carName" placeholder="Name" aria-required="true" />
+              </div>
+              <div class="form-row">
+                <input type="number" id="carYear" placeholder="Year" aria-required="true" />
+                <input type="number" id="carPrice" placeholder="Price (USD)" aria-required="true" />
+              </div>
+              <div class="form-row">
+                <input type="text" id="carBody" placeholder="Body Type" />
+                <input type="text" id="carImage" placeholder="Image URL" />
+              </div>
+              <div class="form-row">
+                <input type="text" id="carTooltip" placeholder="Tooltip" />
+                <input type="text" id="carDrivetrain" placeholder="Drivetrain" />
+              </div>
+              <div class="form-row">
+                <input type="text" id="carEngine" placeholder="Engine" />
+                <input type="text" id="carHorsepower" placeholder="Horsepower" />
+              </div>
+              <div class="form-row">
+                <input type="text" id="carTopSpeed" placeholder="Top Speed" />
+                <input type="text" id="carAcceleration" placeholder="Acceleration" />
+              </div>
+              <button type="button" onclick="addCar()">Add Car</button>
+            </form>
+            <div class="car-table" aria-label="Car List Table">
+              <h3>Car List</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="carTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
 
-      <div id="carsTab" class="tab-content active">
-        <h2>Manage Cars</h2>
-        <div class="admin-actions">
-          <button onclick="cleanupCars()" class="cleanup-btn">Clean Up Duplicate Cars</button>
-        </div>
-        <div class="crud-form">
-          <h3>Add/Edit Car</h3>
-          <input type="text" id="carBrand" placeholder="Brand" />
-          <input type="text" id="carName" placeholder="Name" />
-          <input type="number" id="carYear" placeholder="Year" />
-          <input type="number" id="carPrice" placeholder="Price (USD)" />
-          <input type="text" id="carBody" placeholder="Body Type" />
-          <input type="text" id="carImage" placeholder="Image URL" />
-          <input type="text" id="carTooltip" placeholder="Tooltip" />
-          <input type="text" id="carDrivetrain" placeholder="Drivetrain" />
-          <input type="text" id="carEngine" placeholder="Engine" />
-          <input type="text" id="carHorsepower" placeholder="Horsepower" />
-          <input type="text" id="carTopSpeed" placeholder="Top Speed" />
-          <input type="text" id="carAcceleration" placeholder="Acceleration" />
-          <button onclick="addCar()">Add Car</button>
-        </div>
-
-        <div class="car-table">
-          <h3>Car List</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>Year</th>
-                <th>Price</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody id="carTableBody"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <div id="newsTab" class="tab-content">
-        <h2>Manage News</h2>
-        <div class="admin-actions">
-          <button onclick="cleanupNews()" class="cleanup-btn">Clean Up Duplicate News</button>
-        </div>
-        <div class="crud-form">
-          <h3>Add News</h3>
-          <input type="text" id="newsTitle" placeholder="Title" />
-          <input type="text" id="newsImage" placeholder="Image URL" />
-          <textarea id="newsContent" placeholder="Content" rows="10" class="news-content-textarea"></textarea>
-          <input type="text" id="newsSource" placeholder="Source" />
-          <input type="text" id="newsUrl" placeholder="Article URL" />
-          <button onclick="addNews()">Add News</button>
-        </div>
-
-        <div class="news-table">
-          <h3>News List</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Date</th>
-                <th>Source</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody id="newsTableBody"></tbody>
-          </table>
-        </div>
-      </div>
+        <section id="newsTab" class="tab-content" role="tabpanel" aria-labelledby="newsTabBtn" tabindex="-1">
+          <h2>Manage News</h2>
+          <div class="admin-actions">
+            <button onclick="cleanupNews()" class="cleanup-btn" aria-label="Clean Up Duplicate News">Clean Up Duplicate News</button>
+          </div>
+          <div class="admin-content-row">
+            <form class="crud-form" aria-label="Add News Form">
+              <h3>Add News</h3>
+              <div class="form-row">
+                <input type="text" id="newsTitle" placeholder="Title" aria-required="true" />
+                <input type="text" id="newsImage" placeholder="Image URL" />
+              </div>
+              <div class="form-row">
+                <textarea id="newsContent" placeholder="Content" rows="10" class="news-content-textarea" aria-required="true"></textarea>
+              </div>
+              <div class="form-row">
+                <input type="text" id="newsSource" placeholder="Source" aria-required="true" />
+                <input type="text" id="newsUrl" placeholder="Article URL" />
+              </div>
+              <button type="button" onclick="addNews()">Add News</button>
+            </form>
+            <div class="news-table" aria-label="News List Table">
+              <h3>News List</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Source</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="newsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
     </section>
 
     <!-- Firebase SDKs -->

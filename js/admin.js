@@ -52,12 +52,85 @@ document.addEventListener('DOMContentLoaded', () => {
   loadInitialNews();
 });
 
-function login() {
+// --- SYNC FUNCTIONS ---
+async function syncNewsWithJson() {
+  try {
+    const [jsonRes, firestoreNews] = await Promise.all([
+      fetch("../assets/news.json").then(res => res.json()),
+      firebaseDB.getNews()
+    ]);
+    const firestoreMap = new Map(firestoreNews.map(n => [`${n.title}|||${n.source}`, n]));
+    const jsonMap = new Map(jsonRes.map(n => [`${n.title}|||${n.source}`, n]));
+    // Add or update
+    for (const item of jsonRes) {
+      const key = `${item.title}|||${item.source}`;
+      const firestoreItem = firestoreMap.get(key);
+      if (!firestoreItem) {
+        await firebaseDB.addNews(item);
+      } else {
+        const fields = ["content", "imageUrl", "publishedAt", "url"];
+        const changed = fields.some(f => firestoreItem[f] !== item[f]);
+        if (changed) {
+          await firebaseDB.updateNews(firestoreItem.id, item);
+        }
+      }
+    }
+    // Delete
+    for (const n of firestoreNews) {
+      const key = `${n.title}|||${n.source}`;
+      if (!jsonMap.has(key)) {
+        await firebaseDB.deleteNews(n.id);
+      }
+    }
+  } catch (error) {
+    console.error("Error syncing news:", error);
+  }
+}
+
+async function syncCarsWithJson() {
+  try {
+    const [jsonRes, firestoreCars] = await Promise.all([
+      fetch("../assets/cars.json").then(res => res.json()),
+      firebaseDB.getCars()
+    ]);
+    const firestoreMap = new Map(firestoreCars.map(c => [`${c.brand}|||${c.name}|||${c.year}`, c]));
+    const jsonMap = new Map(jsonRes.map(c => [`${c.brand}|||${c.name}|||${c.year}`, c]));
+    // Add or update
+    for (const item of jsonRes) {
+      const key = `${item.brand}|||${item.name}|||${item.year}`;
+      const firestoreItem = firestoreMap.get(key);
+      if (!firestoreItem) {
+        await firebaseDB.addCar(item);
+      } else {
+        const fields = ["price", "body", "image", "tooltip", "drivetrain"];
+        const specsChanged = JSON.stringify(firestoreItem.specs) !== JSON.stringify(item.specs);
+        const changed = fields.some(f => firestoreItem[f] !== item[f]) || specsChanged;
+        if (changed) {
+          await firebaseDB.updateCar(firestoreItem.id, item);
+        }
+      }
+    }
+    // Delete
+    for (const c of firestoreCars) {
+      const key = `${c.brand}|||${c.name}|||${c.year}`;
+      if (!jsonMap.has(key)) {
+        await firebaseDB.deleteCar(c.id);
+      }
+    }
+  } catch (error) {
+    console.error("Error syncing cars:", error);
+  }
+}
+
+// Change login to async and call sync functions before loadInitialData
+async function login() {
   const password = document.getElementById("adminPassword").value;
   if (password === adminPassword) {
     document.getElementById("loginSection").style.display = "none";
     document.getElementById("dashboardSection").style.display = "block";
-    loadInitialData();
+    await syncNewsWithJson();
+    await syncCarsWithJson();
+    await loadInitialData();
   } else {
     alert("Incorrect password!");
   }

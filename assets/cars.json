@@ -5,7 +5,7 @@
     "year": 2022,
     "price": 380786,
     "body": "coupe",
-    "image": "image/Maserati/Maserati_MC20.jpg",
+    "image": "https://luxurypulse.com/img/pictures/66f9ccd61286aLarge.jpeg",
     "tooltip": "Luxury Italian Engineering",
     "drivetrain": "RWD",
     "specs": {
@@ -21,7 +21,7 @@
     "year": 2024,
     "price": 407986,
     "body": "coupe",
-    "image": "image/Porsche/Porsche_911GT3RS.jpg",
+    "image": "https://img.cdn.dragon2000.net/C395/U5277/IMG_70649-medium.jpg",
     "tooltip": "Precision German Performance",
     "drivetrain": "RWD",
     "specs": {
@@ -37,7 +37,7 @@
     "year": 2016,
     "price": 7017584,
     "body": "convertible",
-    "image": "image/Ferrari/Ferrari_LaFerrari_Aperta.jpg",
+    "image": "https://res.cloudinary.com/kidston/image/upload/c_fill/2022/11/2018%20Ferrari%20LaFerrari%20Aperta/1.jpg",
     "tooltip": "Iconic Ferrari Hybrid Power",
     "drivetrain": "RWD",
     "specs": {
@@ -549,7 +549,7 @@
     "year": 2020,
     "price": 95186,
     "body": "coupe",
-    "image": "images/nissan_370z_nismo.jpg",
+    "image": "https://www.motortrend.com/uploads/sites/11/2020/11/Nissan_370Z_Nismo_frt.jpg",
     "tooltip": "Sporty Japanese Coupe",
     "drivetrain": "RWD",
     "specs": {
@@ -565,7 +565,7 @@
     "year": 2023,
     "price": 81586,
     "body": "hatchback",
-    "image": "images/toyota_gr_yaris.jpg",
+    "image": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/58/2024/01/13/Toyota-Yaris-GR-2943507954.jpg",
     "tooltip": "Rally-Bred Hot Hatch",
     "drivetrain": "AWD",
     "specs": {
@@ -581,7 +581,7 @@
     "year": 2009,
     "price": 108786,
     "body": "convertible",
-    "image": "images/honda_s2000.jpg",
+    "image": "https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2022/07/08/honda-s2000-2_2jpg-20220708091850.jpg",
     "tooltip": "High-Revving Roadster",
     "drivetrain": "RWD",
     "specs": {
@@ -597,7 +597,7 @@
     "year": 2012,
     "price": 67986,
     "body": "coupe",
-    "image": "images/mazda_rx8.jpg",
+    "image": "https://www.blackxperience.com/assets/content/blackauto/autonews/rr8.JPG",
     "tooltip": "Last of the Rotary Coupes",
     "drivetrain": "RWD",
     "specs": {
@@ -613,7 +613,7 @@
     "year": 2007,
     "price": 54386,
     "body": "sedan",
-    "image": "images/subaru_impreza_wrx.jpg",
+    "image": "https://images.collectingcars.com/026443/main.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85",
     "tooltip": "Classic Rally Icon",
     "drivetrain": "AWD",
     "specs": {
@@ -629,7 +629,7 @@
     "year": 1999,
     "price": 48986,
     "body": "coupe",
-    "image": "images/mitsubishi_eclipse_gsx.jpg",
+    "image": "https://media-r2.carsandbids.com/cdn-cgi/image/width=2080,quality=70/1477bbe21e8d6b5e719c7c3ccab577fd47dd8cc3/photos/3yv62bkp-cpURoFPPJY-(edit).jpg?t=170176743704",
     "tooltip": "90s JDM Tuner Favorite",
     "drivetrain": "AWD",
     "specs": {
@@ -645,7 +645,7 @@
     "year": 2002,
     "price": 89786,
     "body": "coupe",
-    "image": "images/nissan_silvia_s15.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Nissan_Silvia_S15_001.JPG",
     "tooltip": "Drift King Favorite",
     "drivetrain": "RWD",
     "specs": {
@@ -661,7 +661,7 @@
     "year": 1998,
     "price": 62586,
     "body": "coupe",
-    "image": "images/toyota_celica_gtfour.jpg",
+    "image": "https://images.classic.com/vehicles/d2708046681a1fc8633bbb2aa74dc4da1d86c941.jpg?w=1200&h=676&fit=crop",
     "tooltip": "Rally-Homologated Classic",
     "drivetrain": "AWD",
     "specs": {
@@ -677,7 +677,7 @@
     "year": 2001,
     "price": 76186,
     "body": "coupe",
-    "image": "images/honda_integra_type_r.jpg",
+    "image": "https://redriven.com/wp-content/uploads/2022/11/2001-Honda-Integra-Type-R-1-scaled.jpg",
     "tooltip": "FWD Performance Legend",
     "drivetrain": "FWD",
     "specs": {
@@ -693,7 +693,7 @@
     "year": 2013,
     "price": 59886,
     "body": "hatchback",
-    "image": "images/mazda_3_mps.jpg",
+    "image": "https://topauto.co.za/wp-content/uploads/2021/02/Mazda3-MPS-2nd-gen-header.jpg",
     "tooltip": "Underrated Hot Hatch",
     "drivetrain": "FWD",
     "specs": {
@@ -709,7 +709,7 @@
     "year": 2023,
     "price": 176786,
     "body": "suv",
-    "image": "images/dodge_durango_hellcat.jpg",
+    "image": "https://cdn.motor1.com/images/mgl/E6x8b3/s1/2025-dodge-durango-hellcat-hammerhead-front-3-4.jpg",
     "tooltip": "Fastest American SUV",
     "drivetrain": "AWD",
     "specs": {
@@ -725,7 +725,7 @@
     "year": 2023,
     "price": 135986,
     "body": "coupe",
-    "image": "images/chevrolet_corvette_stingray.jpg",
+    "image": "https://cdn.antaranews.com/cache/1200x800/2013/01/20130114corvette2014.jpg",
     "tooltip": "Mid-Engine American Icon",
     "drivetrain": "RWD",
     "specs": {
@@ -741,7 +741,7 @@
     "year": 2022,
     "price": 116946,
     "body": "coupe",
-    "image": "images/ford_mustang_mach1.jpg",
+    "image": "https://cdn.motor1.com/images/mgl/9Lvry/s1/2021-ford-mustang-mach-1.jpg",
     "tooltip": "Track-Ready Mustang",
     "drivetrain": "RWD",
     "specs": {
@@ -757,7 +757,7 @@
     "year": 2024,
     "price": 108786,
     "body": "sedan",
-    "image": "images/tesla_model_3_performance.jpg",
+    "image": "https://www.thedrive.com/wp-content/uploads/2025/04/2025-Tesla-Model-3-Performance-1.jpg?quality=85",
     "tooltip": "Electric Performance Sedan",
     "drivetrain": "AWD",
     "specs": {
@@ -773,7 +773,7 @@
     "year": 2023,
     "price": 163186,
     "body": "pickup",
-    "image": "images/dodge_ram_trx.jpg",
+    "image": "https://cdn.motor1.com/images/mgl/P4Q2A/s1/2021-ram-trx-exterior.jpg",
     "tooltip": "Off-Road Beast Truck",
     "drivetrain": "AWD",
     "specs": {
@@ -789,7 +789,7 @@
     "year": 2024,
     "price": 149586,
     "body": "pickup",
-    "image": "images/chevrolet_silverado_zr2.jpg",
+    "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/08/1200/675/bison-hero.jpg?ve=1&tl=1",
     "tooltip": "Rugged American Truck",
     "drivetrain": "AWD",
     "specs": {
@@ -805,7 +805,7 @@
     "year": 2023,
     "price": 130586,
     "body": "suv",
-    "image": "images/ford_bronco_raptor.jpg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/2022-ford-bronco-raptor-125-1660609091.jpg?crop=0.708xw:0.602xh;0.171xw,0.237xh&resize=1200:*",
     "tooltip": "Off-Road Adventure SUV",
     "drivetrain": "AWD",
     "specs": {
@@ -821,7 +821,7 @@
     "year": 2023,
     "price": 217586,
     "body": "suv",
-    "image": "images/tesla_model_x_plaid.jpg",
+    "image": "https://d2q97jj8nilsnk.cloudfront.net/images/20221219_170858-min.jpg",
     "tooltip": "Fastest Electric SUV",
     "drivetrain": "AWD",
     "specs": {
@@ -837,7 +837,7 @@
     "year": 2015,
     "price": 190386,
     "body": "coupe",
-    "image": "images/dodge_viper_gts.jpg",
+    "image": "https://i0.wp.com/moparinsiders.com/wp-content/uploads/2023/10/1996_dodge_viper-gts_230923-Viper-W-01-30496.jpg.jpg?fit=2048%2C1152&ssl=1",
     "tooltip": "Classic American Supercar",
     "drivetrain": "RWD",
     "specs": {
@@ -853,7 +853,7 @@
     "year": 2020,
     "price": 135986,
     "body": "coupe",
-    "image": "images/ford_shelby_gt350.jpg",
+    "image": "https://www.americanmusclecarmuseum.com/files/cars/2015-ford-shelby-gt350-50th-anniversary_7699.jpg",
     "tooltip": "High-Revving Mustang",
     "drivetrain": "RWD",
     "specs": {

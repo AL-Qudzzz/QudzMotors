@@ -119,20 +119,24 @@ function displayNews() {
 function createNewsCard(news) {
     const card = document.createElement('div');
     card.className = 'news-card';
+    card.style.display = 'flex';
+    card.style.flexDirection = 'column';
+    card.style.height = '100%';
     const defaultImage = '../assets/image/default-news-image.jpg';
     const imagePath = news.imageUrl.startsWith('http') ? news.imageUrl : `../assets/image/${news.imageUrl}`;
     card.innerHTML = `
         <div class="news-image">
             <img src="${imagePath}" alt="${news.title}">
         </div>
-        <div class="news-info">
+        <div class="news-info" style="display: flex; flex-direction: column; flex: 1;">
             <h3>${news.title}</h3>
-            <p class="news-desc">${news.description || news.content}</p>
-            <div class="news-meta">
+            <p class="news-desc" style="flex:0 0 auto;">${news.description || news.content}</p>
+            <div class="news-meta" style="flex:0 0 auto;">
                 <span>${formatDate(news.publishedAt)}</span>
                 <span>${news.source}</span>
             </div>
-            <button onclick="showNewsPopup(${JSON.stringify(news).replace(/"/g, '&quot;')})" class="read-more">
+            <div style="flex:1 1 auto;"></div>
+            <button onclick="showNewsPopup(${JSON.stringify(news).replace(/\"/g, '&quot;')})" class="read-more" style="margin-top:auto;align-self:flex-start;">
                 Read More
             </button>
         </div>
