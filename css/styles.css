@@ -384,6 +384,7 @@ nav ul li a:hover::before {
   object-fit: cover;
   aspect-ratio: 3 / 2;
   transition: transform 0.5s ease;
+  border-radius: 12px;
 }
 
 .car-card:hover img {
@@ -462,6 +463,7 @@ nav ul li a:hover::before {
   object-fit: cover;
   aspect-ratio: 3 / 2;
   margin-bottom: 15px;
+  border-radius: 12px;
 }
 
 .popup-content .specs p {
