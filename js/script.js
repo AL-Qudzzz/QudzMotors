@@ -86,7 +86,7 @@ function displayCars(cars) {
             <img src="${imagePath}" alt="${car.name}">
             <h3>${car.name}</h3>
             <p>Price: $ ${car.price.toLocaleString()}</p>
-            <p>Year: ${car.year} | 0 km</p>
+            <p>Year: ${car.year}</p>
         `;
 
     carGrid.appendChild(carCard);
