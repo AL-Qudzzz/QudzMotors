@@ -1,0 +1,866 @@
+[
+  {
+    "brand": "maserati",
+    "name": "Maserati MC20 Venuum Cerberus",
+    "year": 2022,
+    "price": 380786,
+    "body": "coupe",
+    "image": "https://luxurypulse.com/img/pictures/66f9ccd61286aLarge.jpeg",
+    "tooltip": "Luxury Italian Engineering",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "3.0L V6",
+      "horsepower": "621 HP",
+      "topSpeed": "325 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche 911 GT3 RS Weissach",
+    "year": 2024,
+    "price": 407986,
+    "body": "coupe",
+    "image": "https://img.cdn.dragon2000.net/C395/U5277/IMG_70649-medium.jpg",
+    "tooltip": "Precision German Performance",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "4.0L Flat-6",
+      "horsepower": "518 HP",
+      "topSpeed": "315 km/h",
+      "acceleration": "0-100 km/h in 3.2s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari LaFerrari Aperta",
+    "year": 2016,
+    "price": 7017584,
+    "body": "convertible",
+    "image": "https://res.cloudinary.com/kidston/image/upload/c_fill/2022/11/2018%20Ferrari%20LaFerrari%20Aperta/1.jpg",
+    "tooltip": "Iconic Ferrari Hybrid Power",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "6.3L V12 + Electric",
+      "horsepower": "950 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Aventador Ultimae",
+    "year": 2023,
+    "price": 516786,
+    "body": "coupe",
+    "image": "https://cdn.motor1.com/images/mgl/4JyZA/s1/lamborghini-aventador-lp-780-4-ultimae.webp",
+    "tooltip": "Italian Supercar Excellence",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "6.5L V12",
+      "horsepower": "769 HP",
+      "topSpeed": "355 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Chiron Super Sport",
+    "year": 2022,
+    "price": 951986,
+    "body": "coupe",
+    "image": "https://assets.blackxperience.com/content/blackauto/autonews/bugatti-chiron-super-sport-first-customer-deliveries.jpg",
+    "tooltip": "Hypercar Speed King",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1578 HP",
+      "topSpeed": "420 km/h",
+      "acceleration": "0-100 km/h in 2.4s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren P1 GTR",
+    "year": 2015,
+    "price": 815986,
+    "body": "coupe",
+    "image": "https://imgcdnblog.carvaganza.com/wp-content/uploads/2016/05/McLaren-P1-GTR-Dijual-%E2%82%AC4-Juta-2.jpg",
+    "tooltip": "Track-Focused Hypercar",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "3.8L V8 + Electric",
+      "horsepower": "986 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin Valkyrie",
+    "year": 2023,
+    "price": 870386,
+    "body": "coupe",
+    "image": "https://www.amalgamcollection.com/cdn/shop/files/Wideeditgreen_2000x850_crop_center.jpg?v=1702486189",
+    "tooltip": "British Engineering Marvel",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "6.5L V12 + Electric",
+      "horsepower": "1160 HP",
+      "topSpeed": "354 km/h",
+      "acceleration": "0-100 km/h in 2.6s"
+    }
+  },
+  {
+    "brand": "koenigsegg",
+    "name": "Koenigsegg Jesko Absolut",
+    "year": 2024,
+    "price": 1087986,
+    "body": "coupe",
+    "image": "https://www.gamereactor.asia/media/96/koenigseggbelievesjesko_4289633_650x.jpg",
+    "tooltip": "Swedish Speed Monster",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "5.0L V8",
+      "horsepower": "1600 HP",
+      "topSpeed": "480 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari SF90 Stradale",
+    "year": 2021,
+    "price": 462386,
+    "body": "coupe",
+    "image": "https://asset.kompas.com/crops/Vp_MUfwOTd8i4DAIb6VBD7mG7GU=/44x94:1275x914/1200x800/data/photo/2021/03/28/606010c3979de.jpeg",
+    "tooltip": "Ferrari Hybrid Performance",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "4.0L V8 + Electric",
+      "horsepower": "986 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Huracán Tecnica",
+    "year": 2023,
+    "price": 353586,
+    "body": "coupe",
+    "image": "https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_240,q_auto:good,w_385/pil6borxyuucbqrljs5c.jpg",
+    "tooltip": "Aggressive Italian Design",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "5.2L V10",
+      "horsepower": "631 HP",
+      "topSpeed": "325 km/h",
+      "acceleration": "0-100 km/h in 3.2s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche Taycan Turbo S",
+    "year": 2024,
+    "price": 326386,
+    "body": "sedan",
+    "image": "https://imgcdn.oto.com/large/gallery/exterior/31/2340/porsche-taycan-front-angle-low-view-450516.jpg",
+    "tooltip": "Electric Performance Beast",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "Dual Electric Motors",
+      "horsepower": "750 HP",
+      "topSpeed": "260 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "rimac",
+    "name": "Rimac C Two",
+    "year": 2023,
+    "price": 679986,
+    "body": "coupe",
+    "image": "https://hybrid.co.id/wp-content/uploads/2018/03/e260688f1e0e9f8d8306e2efbef92aec_rimac-c-two-01-825x510.jpg",
+    "tooltip": "Electric Hypercar Pioneer",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "Four Electric Motors",
+      "horsepower": "1914 HP",
+      "topSpeed": "412 km/h",
+      "acceleration": "0-100 km/h in 1.9s"
+    }
+  },
+  {
+    "brand": "pagani",
+    "name": "Pagani Huayra R",
+    "year": 2022,
+    "price": 870386,
+    "body": "coupe",
+    "image": "https://cdn.rmsothebys.com/7/d/2/0/5/1/7d2051407e8d49c1d0216bc2d27ac9744206f095.webp",
+    "tooltip": "Italian Craftsmanship Art",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "6.0L V12",
+      "horsepower": "850 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 3.0s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari 488 Pista",
+    "year": 2020,
+    "price": 380786,
+    "body": "coupe",
+    "image": "https://issimi-vehicles-cdn.b-cdn.net/publicamlvehiclemanagement/VehicleDetails/496/timestamped-1707481260143-2019Ferrari488-1.jpg?width=3840&quality=75",
+    "tooltip": "Track-Ready Ferrari",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "3.9L V8",
+      "horsepower": "710 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.85s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Veneno",
+    "year": 2014,
+    "price": 1223986,
+    "body": "coupe",
+    "image": "https://robbreport.com/wp-content/uploads/2024/04/2-w-SBX_Veneno_008_828c1e.jpg?w=1024",
+    "tooltip": "Rare Italian Masterpiece",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "6.5L V12",
+      "horsepower": "740 HP",
+      "topSpeed": "355 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Divo",
+    "year": 2021,
+    "price": 1577586,
+    "body": "coupe",
+    "image": "https://cdn.motor1.com/images/mgl/gZlkg/s1/bugatti-divo-front-view.webp",
+    "tooltip": "Ultimate Track Hypercar",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1479 HP",
+      "topSpeed": "380 km/h",
+      "acceleration": "0-100 km/h in 2.4s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren Senna",
+    "year": 2019,
+    "price": 543986,
+    "body": "coupe",
+    "image": "https://imgx.gridoto.com/crop/0x0:0x0/750x500/photo/2021/02/01/466860162jpg-20210201015022.jpg",
+    "tooltip": "Tribute to a Legend",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "789 HP",
+      "topSpeed": "335 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin DB11 AMR",
+    "year": 2022,
+    "price": 435186,
+    "body": "coupe",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/aston-martin-db11-amr-china-grey-7-1526570242.jpg",
+    "tooltip": "British Luxury Performance",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "5.2L V12",
+      "horsepower": "630 HP",
+      "topSpeed": "334 km/h",
+      "acceleration": "0-100 km/h in 3.7s"
+    }
+  },
+  {
+    "brand": "koenigsegg",
+    "name": "Koenigsegg Regera",
+    "year": 2020,
+    "price": 761586,
+    "body": "coupe",
+    "image": "https://www.supervettura.com/blobs/Cars/123/5aca99e9-6ac1-4a28-92d7-03c1e4bdc365.jpg?width=1920&height=1080&mode=crop",
+    "tooltip": "Hybrid Swedish Hypercar",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "5.0L V8 + Electric",
+      "horsepower": "1500 HP",
+      "topSpeed": "410 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari 812 Superfast",
+    "year": 2018,
+    "price": 407986,
+    "body": "coupe",
+    "image": "https://issimi-vehicles-cdn.b-cdn.net/publicamlvehiclemanagement/VehicleDetails/668/timestamped-1730178483559-1-2019-Ferrari-812-245747.jpg",
+    "tooltip": "Powerful Ferrari V12",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "6.5L V12",
+      "horsepower": "789 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Urus Performante",
+    "year": 2024,
+    "price": 462386,
+    "body": "suv",
+    "image": "https://cdn.motor1.com/images/mgl/2NNknE/s1/lamborghini-urus-performante.jpg",
+    "tooltip": "Fastest Luxury SUV",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "657 HP",
+      "topSpeed": "306 km/h",
+      "acceleration": "0-100 km/h in 3.3s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche 918 Spyder",
+    "year": 2015,
+    "price": 598386,
+    "body": "convertible",
+    "image": "https://cdn.motor1.com/images/mgl/g40OZP/s1/2015-porsche-918-spyder.webp",
+    "tooltip": "Hybrid Porsche Excellence",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "4.6L V8 + Electric",
+      "horsepower": "887 HP",
+      "topSpeed": "345 km/h",
+      "acceleration": "0-100 km/h in 2.6s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Veyron Grand Sport",
+    "year": 2013,
+    "price": 815986,
+    "body": "convertible",
+    "image": "https://cdn.motor1.com/images/mgl/RGJmA/s1/2008-bugatti-grand-sport-restoration-exterior-view.jpg",
+    "tooltip": "Legendary Speed Icon",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1001 HP",
+      "topSpeed": "407 km/h",
+      "acceleration": "0-100 km/h in 2.5s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren 720S",
+    "year": 2021,
+    "price": 380786,
+    "body": "coupe",
+    "image": "https://mclaren.scene7.com/is/image/mclaren/720S-Coupe_hero:crop-16x9?wid=1920&hei=1080",
+    "tooltip": "Dynamic British Supercar",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "710 HP",
+      "topSpeed": "341 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin Vanquish Zagato",
+    "year": 2019,
+    "price": 489586,
+    "body": "coupe",
+    "image": "https://robbreport.com/wp-content/uploads/2024/11/zagshootingbrake01.jpg?w=1024",
+    "tooltip": "Exclusive British Design",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "6.0L V12",
+      "horsepower": "595 HP",
+      "topSpeed": "324 km/h",
+      "acceleration": "0-100 km/h in 3.5s"
+    }
+  },
+  {
+    "brand": "koenigsegg",
+    "name": "Koenigsegg Agera RS",
+    "year": 2017,
+    "price": 707186,
+    "body": "coupe",
+    "image": "https://www.supervettura.com/blobs/Cars/96/03b61a3d-2433-4f46-b240-3eb193c1d68c.jpg?width=1920&height=1080&mode=crop",
+    "tooltip": "Record-Breaking Hypercar",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "5.0L V8",
+      "horsepower": "1160 HP",
+      "topSpeed": "447 km/h",
+      "acceleration": "0-100 km/h in 2.6s"
+    }
+  },
+  {
+    "brand": "pagani",
+    "name": "Pagani Zonda Cinque",
+    "year": 2010,
+    "price": 1087986,
+    "body": "coupe",
+    "image": "https://www.supercars.net/blog/wp-content/uploads/2020/10/2009-Pagani-Zonda-Cinque-Roadster-007-2160-scaled.jpg",
+    "tooltip": "Limited Edition Masterpiece",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "7.3L V12",
+      "horsepower": "678 HP",
+      "topSpeed": "350 km/h",
+      "acceleration": "0-100 km/h in 3.4s"
+    }
+  },
+  {
+    "brand": "rimac",
+    "name": "Rimac Nevera",
+    "year": 2024,
+    "price": 625586,
+    "body": "coupe",
+    "image": "https://web-cdn.rimac-automobili.com/wp-content/uploads/2021/05/31101405/intro_slider_07_optimised.jpg",
+    "tooltip": "Fastest Electric Hypercar",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "Four Electric Motors",
+      "horsepower": "1914 HP",
+      "topSpeed": "412 km/h",
+      "acceleration": "0-100 km/h in 1.85s"
+    }
+  },
+  {
+    "brand": "ferrari",
+    "name": "Ferrari F8 Tributo",
+    "year": 2022,
+    "price": 353586,
+    "body": "coupe",
+    "image": "https://cdn.motor1.com/images/mgl/ykkwb/s1/novitec-ferrari-f8-tributo-n-largo.jpg",
+    "tooltip": "Tribute to V8 Legacy",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "3.9L V8",
+      "horsepower": "710 HP",
+      "topSpeed": "340 km/h",
+      "acceleration": "0-100 km/h in 2.9s"
+    }
+  },
+  {
+    "brand": "lamborghini",
+    "name": "Lamborghini Gallardo LP570-4",
+    "year": 2013,
+    "price": 271986,
+    "body": "coupe",
+    "image": "https://www.carscoops.com/wp-content/uploads/2020/04/2014-lamborghini-gallardo-squadra-corse-mecum-25-1024x554.jpg",
+    "tooltip": "Classic Italian Performance",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "5.2L V10",
+      "horsepower": "562 HP",
+      "topSpeed": "325 km/h",
+      "acceleration": "0-100 km/h in 3.4s"
+    }
+  },
+  {
+    "brand": "porsche",
+    "name": "Porsche Panamera Turbo S",
+    "year": 2023,
+    "price": 380786,
+    "body": "sedan",
+    "image": "https://imgcdn.oto.com/large/gallery/exterior/31/248/porsche-panamera-front-angle-low-view-659479.jpg",
+    "tooltip": "Luxury Performance Sedan",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "620 HP",
+      "topSpeed": "315 km/h",
+      "acceleration": "0-100 km/h in 3.1s"
+    }
+  },
+  {
+    "brand": "bugatti",
+    "name": "Bugatti Centodieci",
+    "year": 2022,
+    "price": 2447986,
+    "body": "coupe",
+    "image": "https://cdn.motor1.com/images/mgl/zxp3Jb/s1/bugatti-centodieci-2022-zehntes-und-letztes-exemplar.webp",
+    "tooltip": "Homage to EB110",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "8.0L W16",
+      "horsepower": "1578 HP",
+      "topSpeed": "380 km/h",
+      "acceleration": "0-100 km/h in 2.4s"
+    }
+  },
+  {
+    "brand": "mclaren",
+    "name": "McLaren 765LT",
+    "year": 2021,
+    "price": 435186,
+    "body": "coupe",
+    "image": "https://cdn.motor1.com/images/mgl/nA9VJ1/s1/mclaren-765lt-by-novitec.webp",
+    "tooltip": "Lightweight Track Beast",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "755 HP",
+      "topSpeed": "330 km/h",
+      "acceleration": "0-100 km/h in 2.8s"
+    }
+  },
+  {
+    "brand": "astonmartin",
+    "name": "Aston Martin Vantage AMR",
+    "year": 2020,
+    "price": 353586,
+    "body": "coupe",
+    "image": "https://www.classicdriver.com/sites/default/files/users/33362/cars_images/feed_924321/ec1726869d1e06fef24b1acd73461830.jpeg",
+    "tooltip": "Sporty British Elegance",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "4.0L V8",
+      "horsepower": "503 HP",
+      "topSpeed": "314 km/h",
+      "acceleration": "0-100 km/h in 3.5s"
+    }
+  },
+  {
+    "brand": "nissan",
+    "name": "Nissan 370Z Nismo",
+    "year": 2020,
+    "price": 95186,
+    "body": "coupe",
+    "image": "https://www.motortrend.com/uploads/sites/11/2020/11/Nissan_370Z_Nismo_frt.jpg",
+    "tooltip": "Sporty Japanese Coupe",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "3.7L V6",
+      "horsepower": "350 HP",
+      "topSpeed": "250 km/h",
+      "acceleration": "0-100 km/h in 5.2s"
+    }
+  },
+  {
+    "brand": "toyota",
+    "name": "Toyota GR Yaris",
+    "year": 2023,
+    "price": 81586,
+    "body": "hatchback",
+    "image": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/58/2024/01/13/Toyota-Yaris-GR-2943507954.jpg",
+    "tooltip": "Rally-Bred Hot Hatch",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "1.6L Inline-3 Turbo",
+      "horsepower": "268 HP",
+      "topSpeed": "230 km/h",
+      "acceleration": "0-100 km/h in 5.5s"
+    }
+  },
+  {
+    "brand": "honda",
+    "name": "Honda S2000",
+    "year": 2009,
+    "price": 108786,
+    "body": "convertible",
+    "image": "https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2022/07/08/honda-s2000-2_2jpg-20220708091850.jpg",
+    "tooltip": "High-Revving Roadster",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "2.2L Inline-4",
+      "horsepower": "237 HP",
+      "topSpeed": "240 km/h",
+      "acceleration": "0-100 km/h in 6.2s"
+    }
+  },
+  {
+    "brand": "mazda",
+    "name": "Mazda RX-8",
+    "year": 2012,
+    "price": 67986,
+    "body": "coupe",
+    "image": "https://www.blackxperience.com/assets/content/blackauto/autonews/rr8.JPG",
+    "tooltip": "Last of the Rotary Coupes",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "1.3L Twin-Rotary",
+      "horsepower": "232 HP",
+      "topSpeed": "235 km/h",
+      "acceleration": "0-100 km/h in 6.4s"
+    }
+  },
+  {
+    "brand": "subaru",
+    "name": "Subaru Impreza WRX",
+    "year": 2007,
+    "price": 54386,
+    "body": "sedan",
+    "image": "https://images.collectingcars.com/026443/main.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85",
+    "tooltip": "Classic Rally Icon",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "2.5L Flat-4 Turbo",
+      "horsepower": "224 HP",
+      "topSpeed": "230 km/h",
+      "acceleration": "0-100 km/h in 5.8s"
+    }
+  },
+  {
+    "brand": "mitsubishi",
+    "name": "Mitsubishi Eclipse GSX",
+    "year": 1999,
+    "price": 48986,
+    "body": "coupe",
+    "image": "https://media-r2.carsandbids.com/cdn-cgi/image/width=2080,quality=70/1477bbe21e8d6b5e719c7c3ccab577fd47dd8cc3/photos/3yv62bkp-cpURoFPPJY-(edit).jpg?t=170176743704",
+    "tooltip": "90s JDM Tuner Favorite",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "2.0L Inline-4 Turbo",
+      "horsepower": "210 HP",
+      "topSpeed": "220 km/h",
+      "acceleration": "0-100 km/h in 6.8s"
+    }
+  },
+  {
+    "brand": "nissan",
+    "name": "Nissan Silvia S15",
+    "year": 2002,
+    "price": 89786,
+    "body": "coupe",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Nissan_Silvia_S15_001.JPG",
+    "tooltip": "Drift King Favorite",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "2.0L Inline-4 Turbo",
+      "horsepower": "247 HP",
+      "topSpeed": "225 km/h",
+      "acceleration": "0-100 km/h in 5.5s"
+    }
+  },
+  {
+    "brand": "toyota",
+    "name": "Toyota Celica GT-Four",
+    "year": 1998,
+    "price": 62586,
+    "body": "coupe",
+    "image": "https://images.classic.com/vehicles/d2708046681a1fc8633bbb2aa74dc4da1d86c941.jpg?w=1200&h=676&fit=crop",
+    "tooltip": "Rally-Homologated Classic",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "2.0L Inline-4 Turbo",
+      "horsepower": "252 HP",
+      "topSpeed": "240 km/h",
+      "acceleration": "0-100 km/h in 6.1s"
+    }
+  },
+  {
+    "brand": "honda",
+    "name": "Honda Integra Type R",
+    "year": 2001,
+    "price": 76186,
+    "body": "coupe",
+    "image": "https://redriven.com/wp-content/uploads/2022/11/2001-Honda-Integra-Type-R-1-scaled.jpg",
+    "tooltip": "FWD Performance Legend",
+    "drivetrain": "FWD",
+    "specs": {
+      "engine": "1.8L Inline-4",
+      "horsepower": "195 HP",
+      "topSpeed": "235 km/h",
+      "acceleration": "0-100 km/h in 6.7s"
+    }
+  },
+  {
+    "brand": "mazda",
+    "name": "Mazda 3 MPS",
+    "year": 2013,
+    "price": 59886,
+    "body": "hatchback",
+    "image": "https://topauto.co.za/wp-content/uploads/2021/02/Mazda3-MPS-2nd-gen-header.jpg",
+    "tooltip": "Underrated Hot Hatch",
+    "drivetrain": "FWD",
+    "specs": {
+      "engine": "2.3L Inline-4 Turbo",
+      "horsepower": "260 HP",
+      "topSpeed": "250 km/h",
+      "acceleration": "0-100 km/h in 6.1s"
+    }
+  },
+  {
+    "brand": "dodge",
+    "name": "Dodge Durango SRT Hellcat",
+    "year": 2023,
+    "price": 176786,
+    "body": "suv",
+    "image": "https://cdn.motor1.com/images/mgl/E6x8b3/s1/2025-dodge-durango-hellcat-hammerhead-front-3-4.jpg",
+    "tooltip": "Fastest American SUV",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "6.2L V8 Supercharged",
+      "horsepower": "710 HP",
+      "topSpeed": "290 km/h",
+      "acceleration": "0-100 km/h in 3.5s"
+    }
+  },
+  {
+    "brand": "chevrolet",
+    "name": "Chevrolet Corvette Stingray",
+    "year": 2023,
+    "price": 135986,
+    "body": "coupe",
+    "image": "https://cdn.antaranews.com/cache/1200x800/2013/01/20130114corvette2014.jpg",
+    "tooltip": "Mid-Engine American Icon",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "6.2L V8",
+      "horsepower": "495 HP",
+      "topSpeed": "312 km/h",
+      "acceleration": "0-100 km/h in 3.0s"
+    }
+  },
+  {
+    "brand": "ford",
+    "name": "Ford Mustang Mach 1",
+    "year": 2022,
+    "price": 116946,
+    "body": "coupe",
+    "image": "https://cdn.motor1.com/images/mgl/9Lvry/s1/2021-ford-mustang-mach-1.jpg",
+    "tooltip": "Track-Ready Mustang",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "5.0L V8",
+      "horsepower": "480 HP",
+      "topSpeed": "262 km/h",
+      "acceleration": "0-100 km/h in 4.3s"
+    }
+  },
+  {
+    "brand": "tesla",
+    "name": "Tesla Model 3 Performance",
+    "year": 2024,
+    "price": 108786,
+    "body": "sedan",
+    "image": "https://www.thedrive.com/wp-content/uploads/2025/04/2025-Tesla-Model-3-Performance-1.jpg?quality=85",
+    "tooltip": "Electric Performance Sedan",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "Dual-Motor Electric",
+      "horsepower": "510 HP",
+      "topSpeed": "261 km/h",
+      "acceleration": "0-100 km/h in 3.3s"
+    }
+  },
+  {
+    "brand": "dodge",
+    "name": "Dodge Ram 1500 TRX",
+    "year": 2023,
+    "price": 163186,
+    "body": "pickup",
+    "image": "https://cdn.motor1.com/images/mgl/P4Q2A/s1/2021-ram-trx-exterior.jpg",
+    "tooltip": "Off-Road Beast Truck",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "6.2L V8 Supercharged",
+      "horsepower": "702 HP",
+      "topSpeed": "190 km/h",
+      "acceleration": "0-100 km/h in 4.5s"
+    }
+  },
+  {
+    "brand": "chevrolet",
+    "name": "Chevrolet Silverado ZR2",
+    "year": 2024,
+    "price": 149586,
+    "body": "pickup",
+    "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/08/1200/675/bison-hero.jpg?ve=1&tl=1",
+    "tooltip": "Rugged American Truck",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "6.2L V8",
+      "horsepower": "420 HP",
+      "topSpeed": "180 km/h",
+      "acceleration": "0-100 km/h in 6.0s"
+    }
+  },
+  {
+    "brand": "ford",
+    "name": "Ford Bronco Raptor",
+    "year": 2023,
+    "price": 130586,
+    "body": "suv",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/2022-ford-bronco-raptor-125-1660609091.jpg?crop=0.708xw:0.602xh;0.171xw,0.237xh&resize=1200:*",
+    "tooltip": "Off-Road Adventure SUV",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "3.0L V6 Twin-Turbo",
+      "horsepower": "418 HP",
+      "topSpeed": "180 km/h",
+      "acceleration": "0-100 km/h in 5.5s"
+    }
+  },
+  {
+    "brand": "tesla",
+    "name": "Tesla Model X Plaid",
+    "year": 2023,
+    "price": 217586,
+    "body": "suv",
+    "image": "https://d2q97jj8nilsnk.cloudfront.net/images/20221219_170858-min.jpg",
+    "tooltip": "Fastest Electric SUV",
+    "drivetrain": "AWD",
+    "specs": {
+      "engine": "Tri-Motor Electric",
+      "horsepower": "1020 HP",
+      "topSpeed": "262 km/h",
+      "acceleration": "0-100 km/h in 2.6s"
+    }
+  },
+  {
+    "brand": "dodge",
+    "name": "Dodge Viper GTS",
+    "year": 2015,
+    "price": 190386,
+    "body": "coupe",
+    "image": "https://i0.wp.com/moparinsiders.com/wp-content/uploads/2023/10/1996_dodge_viper-gts_230923-Viper-W-01-30496.jpg.jpg?fit=2048%2C1152&ssl=1",
+    "tooltip": "Classic American Supercar",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "8.4L V10",
+      "horsepower": "645 HP",
+      "topSpeed": "331 km/h",
+      "acceleration": "0-100 km/h in 3.5s"
+    }
+  },
+  {
+    "brand": "ford",
+    "name": "Ford Shelby GT350",
+    "year": 2020,
+    "price": 135986,
+    "body": "coupe",
+    "image": "https://www.americanmusclecarmuseum.com/files/cars/2015-ford-shelby-gt350-50th-anniversary_7699.jpg",
+    "tooltip": "High-Revving Mustang",
+    "drivetrain": "RWD",
+    "specs": {
+      "engine": "5.2L V8",
+      "horsepower": "526 HP",
+      "topSpeed": "290 km/h",
+      "acceleration": "0-100 km/h in 4.0s"
+    }
+  }
+]

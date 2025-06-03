@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/LogoQM.ico">
+    <title>News - Qudz Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">QUDZ MOTORS</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">CARS</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="page-content">
+      <div class="content-wrapper">
+        <h1 class="page-title">Automotive News</h1>
+        
+        <div class="news-filters">
+          <button class="filter-btn active" data-filter="all">All News</button>
+          <button class="filter-btn" data-filter="api">Latest Updates</button>
+          <button class="filter-btn" data-filter="custom">Qudz Motors News</button>
+        </div>
+
+        <div class="news-container">
+          <div class="news-grid" id="newsGrid">
+            <!-- News items will be loaded here -->
+          </div>
+        </div>
+
+        <div class="news-pagination">
+          <button id="prevPage" class="pagination-btn">Previous</button>
+          <span id="currentPage">Page 1</span>
+          <button id="nextPage" class="pagination-btn">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="news-popup" id="newsPopup">
+      <div class="popup-content">
+        <span class="close" onclick="closeNewsPopup()">×</span>
+        <h2 id="popupTitle"></h2>
+        <div class="news-meta">
+          <span id="popupDate"></span>
+          <span id="popupSource"></span>
+        </div>
+        <img id="popupImage" src="" alt="News Image" />
+        <div class="news-content">
+          <p id="popupContent"></p>
+        </div>
+        <a id="popupLink" href="#" target="_blank" class="read-more">Read Full Article</a>
+      </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/dataSync.js"></script>
+    <script src="js/news.js"></script>
+  </body>
+</html> 

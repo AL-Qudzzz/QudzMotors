@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/LogoQM.ico">
+    <title>Qudz Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">QUDZ MOTORS</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">CARS</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>DOMINATORS OF SPEED</h1>
+      <div class="hero-image">
+        <div class="slideshow">
+          <div
+            class="slide active"
+            style="
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707662964-blob&w=3840&q=100');
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707644325-blob&w=3840&q=100');
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fheroslider%2F1727707598755-blob&w=3840&q=100');
+            "
+          ></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search cars by name..."
+        oninput="searchCars()"
+      />
+    </section>
+
+    <div class="filter-container">
+      <button class="filter-toggle" onclick="toggleFilters()">
+        <span>Filters</span>
+        <span class="filter-icon">▼</span>
+      </button>
+      <section class="filters" id="filterSection">
+        <div class="filter-group">
+          <label for="brands">Brands</label>
+          <select id="brands">
+            <option value="all">All</option>
+            <option value="maserati">Maserati</option>
+            <option value="porsche">Porsche</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="lamborghini">Lamborghini</option>
+            <option value="bugatti">Bugatti</option>
+            <option value="mclaren">McLaren</option>
+            <option value="astonmartin">Aston Martin</option>
+            <option value="koenigsegg">Koenigsegg</option>
+            <option value="rimac">Rimac</option>
+            <option value="pagani">Pagani</option>
+            <option value="nissan">Nissan</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="mazda">Mazda</option>
+            <option value="subaru">Subaru</option>
+            <option value="mitsubishi">Mitsubishi</option>
+            <option value="dodge">Dodge</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="ford">Ford</option>
+            <option value="tesla">Tesla</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="years">Years</label>
+          <select id="years">
+            <option value="all">1947 - 2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2007">2007</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="price">Price</label>
+          <select id="price">
+            <option value="all">All price options</option>
+            <option value="0-544000">0 - $544,000</option>
+            <option value="544000-4080000">$544,000 - $4,080,000</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="bodyType">Body Type</label>
+          <select id="bodyType">
+            <option value="all">All body types</option>
+            <option value="coupe">Coupe</option>
+            <option value="convertible">Convertible</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="hatchback">Hatchback</option>
+            <option value="pickup">Pickup</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="driveType">Drive Type</label>
+          <select id="driveType">
+            <option value="all">All drive types</option>
+            <option value="awd">AWD</option>
+            <option value="rwd">RWD</option>
+            <option value="fwd">FWD</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="specs">Specifications</label>
+          <select id="specs">
+            <option value="all">All specifications</option>
+            <option value="high-performance">High Performance</option>
+          </select>
+        </div>
+        <button onclick="filterCars()">Search</button>
+      </section>
+    </div>
+
+    <div class="cars" id="carGrid">
+      <!-- Mobil akan dimuat secara dinamis dari JSON -->
+    </div>
+
+    <div class="popup" id="carPopup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">×</span>
+        <h2 id="popupTitle"></h2>
+        <img id="popupImage" src="" alt="Car Image" />
+        <div class="specs">
+          <p><strong>Engine:</strong> <span id="popupEngine"></span></p>
+          <p><strong>Horsepower:</strong> <span id="popupHorsepower"></span></p>
+          <p><strong>Top Speed:</strong> <span id="popupTopSpeed"></span></p>
+          <p>
+            <strong>Acceleration:</strong> <span id="popupAcceleration"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/dataSync.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
